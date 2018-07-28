@@ -1,0 +1,27 @@
+<section class="contact home-section fp-auto-height-responsive">
+    {# <div class="bg-circle"></div> #}
+    <div class="bottom-title">{{page.header.title}}</div>
+    <div class="contact-section__content">
+        <div class="contact-section__content--inner">
+            <div class="contact-section__title">
+                <h1>{{page.header.title}}</h1>
+                <div class="contact-section__vert">
+                    {{page.header.vert_text}}
+                </div>
+            </div>
+            <div class="eyebrow">Email me</div>
+            {% for mail in page.header.email %}
+            <a class="email-link" href="{{ mail.link }}">
+                {{ mail.text }}
+            </a>
+            {% endfor %}
+            <div class="eyebrow">Find me on</div>
+            {% for item in page.header.social %}
+            <a class="social-link {{ item.text }}" href="{{ item.link }}" style="color:#{{item.color}};">
+                {{ item.text }}
+            </a>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>

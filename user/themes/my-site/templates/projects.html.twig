@@ -1,0 +1,36 @@
+{% set collection = page.collection() %} 
+
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    <div class="project-panels swiper-container">
+        <div class="swiper-wrapper">
+            {% for project in page.collection() %}
+                    {# {% include 'partials/project-section.html.twig' %} #}
+        
+                <div class="project-item swiper-slide">
+                    <div class="project-item__bg" style="background-image: url('{{ project.media[project.header.main_img].url }}');"></div>
+                    <div class="project-item__info">
+                        <div class="project-item__info-inner">
+                            <div class="project-item__title">
+                                <h1>{{project.header.title}}</h1>
+                            </div>
+                            <div class="project-item__intro">
+                                {{project.header.intro_title}}
+                            </div>
+                            <div class="project-section__button button">
+                                <a href="{{project.url()}}">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    {% include 'partials/side-panels.html.twig' %}
+{% endblock %}
+
+{% do assets.addJs('theme://js/inner.js', {'priority':101,'group':'bottom'}) %}
+{% do assets.addJs('theme://js/swiper.min.js', {'priority':103,'group':'bottom'}) %}
+{% do assets.addJs('theme://js/projects.js', {'priority':102,'group':'bottom'}) %}

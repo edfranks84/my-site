@@ -1,0 +1,82 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+
+    {% if page.header.background %}
+        {% set backgroundImage = 'background-image: url(' ~ page.media.images[page.header.background].url() ~ ');' %}
+    {% else %}
+        {% set backgroundImage = '' %}
+    {% endif %}
+
+    <section class="project-top project-section">
+        <div class="bg-image" style="{{ backgroundImage }}"></div>
+        <!--div class="bg-image" style="background-image: url('{{ project.media[project.header.background].url }}');"></div-->
+        {# <div class="bg-circle"></div> #}
+        {# <div class="side-title"><span>Vaujany</span></div> #}
+        <div class="project-top__content">
+            <div class="project-top__content--inner">
+                <div class="project-top__image" style="background-image: url('{{ page.media[page.header.main_img].url }}');">
+                    {# {% if page.header.main_img %}
+                        {{ page.media.images[page.header.main_img].html('', '', 'main-img') }}
+                    {% endif %} #}
+                    <span></span>
+                </div>
+                <div class="project-top__details rellax" data-rellax-speed="1.5" data-rellax-percentage="0.25">
+                    <div class="project-top__title">{{page.header.title}}</div>
+                    {# <div class="button"><a href="#project-intro.....02">Explore</a></div> #}
+                    
+                </div>
+            </div>
+            
+        </div>
+        <a class="scroll" href="#project-intro" data-scroll>explore</a>
+    </section>
+
+    <section id="project-intro" class="project-intro project-section" data-scroll-activetolerance="300">
+        {# <div class="bg-circle"></div> #}
+        {# <div class="side-title"><span>Intro</span></div> #}
+        <div class="project-intro__content">
+            <div class="project-intro__content--inner">
+                <div class="eyebrow">About the Project</div>
+                <div class="project-intro__title">{{page.header.intro_title}}</div>
+                <div class="project-intro__text"><p>{{page.header.intro_text}}<p></div>
+            </div>
+            <div class="project-details">
+                {% for item in page.header.details %}
+                    <div class="project-details__item">
+                        <span class="project-details__item-key">Client</span>
+                        <span class="project-details__item-value">{{item.client}}</span>
+                    </div>
+                    <div class="project-details__item">
+                        <span class="project-details__item-key">Role</span>
+                        <span class="project-details__item-value">{{item.role}}</span>
+                    </div>
+                    <div class="project-details__item">
+                        <span class="project-details__item-key">Year</span>
+                        <span class="project-details__item-value">{{item.year}}</span>
+                    </div>
+                    <div class="project-details__item">
+                        <div class="button">
+                            <a href="{{item.url}}" target="_blank">Visit</a>
+                        </div>
+                    </div>
+                {% endfor %}
+                
+            </div>
+        </div>
+    </section>
+        
+    <section class="project-section project-laptop" data-scroll-activetolerance="200">
+        <div class="project-laptop__inner">
+            {% if page.header.laptop_img %}
+                {{ page.media.images[page.header.laptop_img].html('', '', 'laptop') }}
+            {% endif %}
+        </div>
+    </section>
+    {% block stuff %}{% endblock %}
+    {% include 'partials/side-panels.html.twig' %}
+
+{% endblock %}
+
+{% do assets.addJs('theme://js/inner.js', {'priority':101,'group':'bottom'}) %}
+{% do assets.addJs('theme://js/project-detail.js', {'priority':102,'group':'bottom'}) %}

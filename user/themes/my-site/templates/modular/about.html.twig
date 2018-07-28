@@ -1,0 +1,30 @@
+{# {% if page.header.background_image %}
+    {% set backgroundImage = 'background-image: url(' ~ page.media.images[page.header.background_img].url() ~ ');' %}
+{% else %}
+    {% set backgroundImage = '' %}
+{% endif %}
+
+<section class="about home-section" style="{{ backgroundImage }}">
+	<div class="bg-circle"></div>
+	<div class="bottom-title">{{page.header.title}}</div>
+    <div class="home-section__content">
+        <div class="home-section__content--inner">
+			<div class="eyebrow">A Bit</div>
+	        {{ page.content }}
+        </div>
+    </div>
+</section> #}
+
+{% extends 'about.html.twig' %}
+
+{# <section class="about home-section" id="about">
+	<div class="bg-img" style="background-image: url('{{ page.media['about-pic.png'].url }}');"></div>
+    <div class="bg-circle"></div>
+	<div class="bottom-title">{{page.header.section_title}}</div>
+    <div class="home-section__content">
+        <div class="home-section__content--inner">
+			<div class="vert-text">A Bit</div>
+	        {{ page.content }}
+        </div>
+    </div>
+</section>  #}

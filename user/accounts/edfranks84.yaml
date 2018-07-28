@@ -1,0 +1,11 @@
+email: edfranks84@gmail.com
+fullname: 'Ed Franks'
+title: Administrator
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$UjrcfoC046.W1uCUOwKgOuKyHoh3T4Jz0W/upQWkrVHyPdLytN28O

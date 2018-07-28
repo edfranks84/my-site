@@ -1,0 +1,6 @@
+{% set collection = page.collection() %} 
+
+{% for project in collection %}
+    {% include 'partials/project-section.html.twig' %}
+{% endfor %}
+    

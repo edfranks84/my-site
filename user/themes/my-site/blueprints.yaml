@@ -1,0 +1,27 @@
+name: My Site
+version: 0.1.0
+description: My site theme
+icon: rebel
+author:
+  name: Ed Franks
+  email: edfranks84@gmail.com
+homepage: https://github.com/ed-franks/grav-theme-my-site
+demo: http://demo.yoursite.com
+keywords: grav, theme, etc
+bugs: https://github.com/ed-franks/grav-theme-my-site/issues
+readme: https://github.com/ed-franks/grav-theme-my-site/blob/develop/README.md
+license: MIT
+
+form:
+  validation: loose
+  fields:
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in Menu
+        highlight: 1
+        default: 1
+        options:
+          1: PLUGIN_ADMIN.ENABLED
+          0: PLUGIN_ADMIN.DISABLED
+        validate:
+          type: bool

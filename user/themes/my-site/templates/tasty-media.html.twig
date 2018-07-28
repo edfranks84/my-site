@@ -1,0 +1,114 @@
+{% extends 'partials/project.html.twig' %}
+
+{% if page.header.background %}
+    {% set backgroundImage = 'background-image: url(' ~ page.media.images[page.header.background].url() ~ ');' %}
+{% else %}
+    {% set backgroundImage = '' %}
+{% endif %}
+{% block stuff %}
+<section class="project-homepage project-section">
+    <div class="project-homepage__bg">{{ page.media['home-bg.png'].html('', '', 'homepage-bg') }}</div>
+    <div class="project-homepage__image">
+        <div class="homepage-bgtext">Home</div>
+        <div class="homepage-label">Home</div>
+        {{ page.media['home.jpg'].html('homepage', 'homepage', 'home-img') }}         
+    </div>
+</section>
+<section class="project-section project-typography {{page.slug}}" data-scroll-activetolerance="200">
+    <div class="project-typography__inner">
+        <div class="typography-bgtext">Typography</div>
+        <div class="typography-label eyebrow">Type</div>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:600|Heebo" rel="stylesheet">
+        <div class="project-typography__heading">
+            <div class="eyebrow">Heading</div>
+            <div class="project-typography__heading-title">
+                <span>{{page.header.heading_font}}</span>
+            </div>
+            <div class="project-typography__heading-az">
+                <span>ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+                <span>abcdefghijklmnopqrstuvwxyz</span>
+                <span>0123456789</span>
+            </div>
+        </div>
+        <div class="project-typography__body">
+            <div class="eyebrow">Body</div>
+            <div class="project-typography__body-title">
+                <span>{{page.header.body_font}}</span>
+            </div>
+            <div class="project-typography__body-az">
+                <span>ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+                <span>abcdefghijklmnopqrstuvwxyz</span>
+                <span>0123456789</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section id="inner-pages" class="project-section inner-pages">
+    <div class="inner-pages__wrap">
+        <div class="project-inner__bg">{{ page.media['inner-bg.png'].html('', '', 'inner-bg') }}</div>
+        <div class="project-inner__image">
+            {# <div class="inner-bgtext">{{page.header.inner_bgtext_1}}</div> #}
+            <div class="inner-label"><span>{{page.header.inner_label_1}}</span></div>
+            {{ page.media['inner1.jpg'].html('inner page', 'inner page', 'inner1') }}         
+        </div>    
+        <div class="project-inner__image" >
+            {# <div class="inner-bgtext">{{page.header.inner_bgtext_2}}</div> #}
+            <div class="inner-label"><span>{{page.header.inner_label_2}}</span></div>
+            {{ page.media['inner2.jpg'].html('inner page', 'inner page', 'inner2') }}     
+        </div>
+    </div>
+</section>
+
+<section class="project-section responsive-project">
+    <div class="responsive-homepage__bg">{{ page.media['responsive-bg.png'].html('', '', 'responsive-bg') }}</div>
+    <div class="responsive-project__inner">
+        <div class="responsive-bgtext">Responsive</div>
+        <div class="responsive-top" data-scroll-activate="" data-scroll-activetolerance="200">
+            <div class="responsive-mobile mobile-home" >
+                {{ page.media['mobile-home.png'].html('', '', 'mobile home') }} 
+            </div>
+            <div class="responsive-tablet tablet" >
+                {{ page.media['tablet.png'].html('Responsive Tablet', 'Responsive Tablet', 'table-img') }} 
+            </div>  
+        </div>
+        <div class="responsive-bottom" data-scroll-activate="" data-scroll-activetolerance="200">
+            <div class="responsive-mobile mobile1">
+                {{ page.media['mobile1.png'].html('mobile', 'Mobile', 'mobile1_img') }} 
+            </div>
+            <div class="responsive-mobile mobile2">
+                {{ page.media['mobile2.png'].html('mobile', 'Mobile', 'mobile2_img') }} 
+            </div>
+            <div class="responsive-mobile mobile3" >
+                {{ page.media['mobile3.png'].html('mobile', 'Mobile', 'mobile3_img') }} 
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="project-links">
+    <div class="project-links-wrap">
+        
+            {# {% if not page.isLast %}
+                {% set linkBg = 'background-image: url(' ~ page.prevSibling(page.path).media[page.prevSibling(page.path).header.main_img].url() ~ ');' %}
+                <a class="project-link" href="{{ page.prevSibling.url }}" style="{{ linkBg }};">
+                    <span>{{ page.prevSibling(page.path).header.title }}</span>
+                </a>
+            {% endif %} #}
+
+            {% if not page.isFirst %}
+                {% set link2Bg = 'background-image: url(' ~ page.nextSibling(page.path).media[page.nextSibling(page.path).header.main_img].url() ~ ');' %}
+                <a class="project-link" href="{{ page.nextSibling.url }}" style="{{ link2Bg }};">
+                    <span>{{ page.nextSibling(page.path).header.title }}</span>
+                </a>
+            {% endif %}
+
+            <a class="project-link" href="/grav-admin/projects/vaujany" style="background-image: url(/grav-admin/user/pages/04.projects/01.vaujany/main.jpg);;">
+                <span>Vaujany Ski Company</span>
+            </a>
+
+    </div>
+</section>
+{% endblock %}
+
+

@@ -1,0 +1,16 @@
+<section class="about home-section fp-auto-height-responsive" id="about-section about">
+    <div class="bg-img" style="background-image: url('{{ page.media['about-pic.png'].url }}');"></div>
+    {# <div class="bg-circle"></div> #}
+    <div class="bottom-title">{{page.header.title}}</div>
+    <div class="about-section__content">
+        <div class="about-section__content--inner">
+            <div class="about-section__title">
+                <h1>{{page.header.title}}</h1>
+                <div class="about-section__vert">
+                    {{page.header.vert_text}}
+                </div>
+            </div>
+            {{ page.content }}
+        </div>
+    </div>
+</section>

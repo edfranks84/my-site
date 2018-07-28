@@ -1,0 +1,101 @@
+// body.panel-active {
+//     overflow: hidden;
+// }
+.side-panel {
+    // min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    opacity: 0;
+    background-color: #0d1320;
+    padding: 0;
+    padding-top: 2em;
+    display: flex;
+    align-content: center;
+    align-content: flex-start;
+    align-items: center;
+    transition: transform 600ms ease-out;
+    &::-webkit-scrollbar {
+        width: 0 !important;
+    }
+    &.about {
+        transform: translateX(-110%);
+        padding-top: 19em;
+        @include respond-to(600) {
+            padding-top: 7em;
+        }
+    }
+    &.contact {
+        transform: translateX(110%);
+    }
+    &.active {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        z-index: 100;
+        transition: transform 600ms ease-out;
+    }
+    &__inner {
+        // min-height: 100%;
+        width: 100%;
+        // overflow-y: scroll;
+        padding: 5em 0 10em;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        .about & {
+            @include respond-to(0to600) {
+                padding-top: 24em;
+                // padding-bottom: 6em;
+            }
+        }
+        .contact & {
+            // padding-bottom: 7em;
+        }
+    }
+    // .contact-section__content {
+    //     display: flex;
+    //     align-content: center;
+    //     align-items: center;
+    // }
+    .contact-section__content {
+        width: 87%;
+        @include respond-to(480) {
+            width: 67%;
+        }
+    }
+    .close-button {
+        height: 2.5em;
+        width: 2.5em;
+        // margin-top: 3em;
+        position: absolute;
+        bottom: 4em;
+        left: 50%;
+        transform: translateX(-50%);
+        .cross-circle,
+        .cross-bar1,
+        .cross-bar2 {
+            fill: none;
+            stroke: #fff;
+            stroke-miterlimit: 10;
+            stroke-width: 20px;
+        }
+        .cross-bar1,
+        .cross-bar2 {
+            stroke-linecap: round;
+        }
+    }
+    .lines {
+        position: fixed;
+        span {
+            height: 200vh;
+        }
+    }
+}
