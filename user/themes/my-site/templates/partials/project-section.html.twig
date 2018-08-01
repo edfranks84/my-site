@@ -5,13 +5,13 @@
         <div class="bottom-title">{{project.title}}</div>
         <div class="project-section__content">
             <div class="project-section__image">
-                <div class="project-section__image-inner">{% if project.media.images|first %} {{ project.media.images[project.header.main_img].html('', '', 'main-img') }} {% endif
-                %}</div>
+                <div class="project-section__image-inner"><a href="{{project.url()}}">{% if project.media.images|first %} {{ project.media.images[project.header.main_img].html('', '', 'main-img') }} {% endif
+                %}</a></div>
             </div>
             <div class="project-section__info">
                 <div class="project-section__info-inner">
                     <div class="project-section__title">
-                        <h1>{{project.header.title}}</h1>
+                        <h1><a href="{{project.url()}}">{{project.header.title}}</a></h1>
                         <div class="project-section__vert">
                             {{project.header.vert_text}}
                         </div>

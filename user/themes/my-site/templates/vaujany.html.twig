@@ -55,7 +55,7 @@
             <div class="inner-label"><span>{{page.header.inner_label_1}}</span></div>
             {{ page.media['inner1.jpg'].html('inner page', 'inner page', 'inner1') }}         
         </div>    
-        <div class="project-inner__image" >
+        <div class="project-inner__image rellax" data-rellax-speed="3" data-rellax-percentage="0.2">
             {# <div class="inner-bgtext">{{page.header.inner_bgtext_2}}</div> #}
             <div class="inner-label"><span>{{page.header.inner_label_2}}</span></div>
             {{ page.media['inner2.jpg'].html('inner page', 'inner page', 'inner2') }}     
@@ -71,18 +71,18 @@
             <div class="responsive-mobile mobile-home" >
                 {{ page.media['mobile-home.png'].html('', '', 'mobile home') }} 
             </div>
-            <div class="responsive-tablet tablet" >
+            <div class="responsive-tablet tablet rellax" data-rellax-speed="4" data-rellax-percentage="0.3">
                 {{ page.media['tablet.png'].html('Responsive Tablet', 'Responsive Tablet', 'table-img') }} 
             </div>  
         </div>
         <div class="responsive-bottom" data-scroll-activate="" data-scroll-activetolerance="200">
-            <div class="responsive-mobile mobile1">
+            <div class="responsive-mobile mobile1 rellax" data-rellax-speed="2" data-rellax-percentage="0.35">
                 {{ page.media['mobile1.png'].html('mobile', 'Mobile', 'mobile1_img') }} 
             </div>
-            <div class="responsive-mobile mobile2">
+            <div class="responsive-mobile mobile2 rellax" data-rellax-speed="4.5" data-rellax-percentage="0.15">
                 {{ page.media['mobile2.png'].html('mobile', 'Mobile', 'mobile2_img') }} 
             </div>
-            <div class="responsive-mobile mobile3" >
+            <div class="responsive-mobile mobile3 rellax" data-rellax-speed="10" data-rellax-percentage="0.1">
                 {{ page.media['mobile3.png'].html('mobile', 'Mobile', 'mobile3_img') }} 
             </div>
         </div>

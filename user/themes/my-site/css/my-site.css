@@ -1770,16 +1770,20 @@ em {
       -ms-flex-direction: row;
           flex-direction: row; } }
   .home-panels section:nth-child(odd) .project-section__content:hover .project-section__image-inner {
-    transform: rotateY(20deg); }
+    transform: rotateY(13deg); }
     @media (min-width: 57.5em) {
       .home-panels section:nth-child(odd) .project-section__content:hover .project-section__image-inner {
-        transform: rotateY(18deg) translateX(5%); } }
+        transform: rotateY(10deg) translateX(5%); } }
   .home-panels section:nth-child(odd) .project-section__content:hover .project-section__info-inner {
-    transform: rotateY(-20deg); }
+    transform: rotateY(-13deg); }
 
 .home-panels section:nth-child(odd) .project-section__image {
   -ms-transform-origin: left;
       transform-origin: left; }
+  @media (min-width: 43.75em) {
+    .home-panels section:nth-child(odd) .project-section__image {
+      padding-left: 2em;
+      padding-right: 0; } }
   .home-panels section:nth-child(odd) .project-section__image-inner:after {
     right: 0em;
     left: auto; }
@@ -1916,12 +1920,12 @@ em {
         -ms-flex-align: center;
             align-items: center; } }
     .project-section__content:hover .project-section__image-inner {
-      transform: rotateY(-20deg); }
+      transform: rotateY(-13deg); }
       @media (min-width: 57.5em) {
         .project-section__content:hover .project-section__image-inner {
-          transform: rotateY(-18deg) translateX(-5%); } }
+          transform: rotateY(-10deg) translateX(-5%); } }
     .project-section__content:hover .project-section__info-inner {
-      transform: rotateY(20deg); }
+      transform: rotateY(13deg); }
   .project-section__image {
     width: 100%;
     position: relative;
@@ -1959,7 +1963,7 @@ em {
             left: -6em; } }
         @media (min-width: 57.5em) {
           .project-section__image-inner:before, .project-section__image-inner:after {
-            left: -2.5em; } }
+            left: -3em; } }
       .project-section__image-inner:after {
         background-color: navy;
         transition: width 500ms ease-out 550ms; }
@@ -1972,7 +1976,7 @@ em {
           margin-left: -6em; } }
       @media (min-width: 57.5em) {
         .project-section__image img {
-          margin-left: -2.5em; } }
+          margin-left: -3em; } }
   .project-section__info {
     width: calc(100% / 6 * 5);
     width: calc(100% - 1em);
@@ -2052,6 +2056,8 @@ em {
       @media (min-width: 75em) {
         .project-section__title h1 {
           font-size: 4.29982em; } }
+    .project-section__title a {
+      color: #fff; }
   .project-section__button {
     margin-top: 1em;
     margin-right: auto; }
@@ -2339,6 +2345,10 @@ em {
     .email-link,
     .social-link {
       font-size: 2.48832em; } }
+  .email-link:hover,
+  .social-link:hover {
+    text-decoration: underline;
+    color: #fff; }
 
 .email-link {
   margin-bottom: 0.5em;
@@ -2352,8 +2362,12 @@ em {
     margin-right: 1em; }
     .active .social-link.Dribbble {
       animation: fade-in-up 700ms ease-out 1100ms forwards; }
+    .social-link.Dribbble:hover {
+      color: #ea4c89; }
   .active .social-link.Behance {
     animation: fade-in-up 700ms ease-out 1200ms forwards; }
+  .social-link.Behance:hover {
+    color: #0b7dff; }
 
 /*!
  * fullPage 2.9.5
@@ -2851,7 +2865,7 @@ html.fp-enabled,
     font-size: 0.9375em; }
 
 .project-intro .eyebrow {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   font-size: 1em;
   font-family: "Barlow Condensed", sans-serif;
   color: #777;
@@ -3432,7 +3446,7 @@ html.fp-enabled,
     .responsive-tablet {
       width: 80%;
       left: 2em;
-      top: 10em; } }
+      top: 8em; } }
   @media (min-width: 0em) and (max-width: 51.1875em) {
     .responsive-tablet {
       opacity: 0;
@@ -3498,7 +3512,7 @@ html.fp-enabled,
         .responsive-bottom .responsive-mobile:nth-child(2) {
           top: 150px; }
         .responsive-bottom .responsive-mobile:nth-child(3) {
-          top: 100px;
+          top: 10px;
           left: 0;
           margin-left: 0; } }
     @media (min-width: 37.5em) {
@@ -3508,7 +3522,7 @@ html.fp-enabled,
           left: -6px;
           top: 0; }
         .responsive-bottom .responsive-mobile:nth-child(2) {
-          top: 50px;
+          top: 55px;
           left: 10px; }
         .responsive-bottom .responsive-mobile:nth-child(3) {
           top: 100px;
@@ -3692,6 +3706,8 @@ html.fp-enabled,
     .side-panel .close-button .cross-bar1,
     .side-panel .close-button .cross-bar2 {
       stroke-linecap: round; }
+    .side-panel .close-button:hover {
+      cursor: pointer; }
   .side-panel .lines {
     position: fixed; }
     .side-panel .lines span {

@@ -286,7 +286,7 @@
         }
     }
     .eyebrow {
-        margin-bottom: 5px;
+        margin-bottom: 8px;
         font-size: ms(0);
         font-family: $alt-font-semibold;
         color: #777;
@@ -1072,7 +1072,7 @@
             // left: 10em;
             // top: 10em;
             left: 2em;
-            top: 10em; // transform: translateY(37%) translateX(5%);
+            top: 8em; // transform: translateY(37%) translateX(5%);
         }
         @include respond-to(0to819) {
             opacity: 0;
@@ -1154,6 +1154,7 @@
                 //         // margin-left: 0;
                 //     }
                 // }
+                
                 @include respond-to(0to819){
                     &:nth-child(1) {
                         opacity: 1;
@@ -1206,7 +1207,8 @@
                     // transform: translateX(52%) translateY(40%);
                     // top: 250px;
                     // left: 100px;
-                    top: 100px;
+                    // top: 100px;
+                    top: 10px;
                     left: 0;
                     margin-left: 0;
                 }
@@ -1227,7 +1229,7 @@
                     // transform: translateY(10%);
                     // transform: translateY(40%);
                     // top: 200px;
-                    top: 50px;
+                    top: 55px;
                     left: 10px;
                 }
                 &:nth-child(3) {

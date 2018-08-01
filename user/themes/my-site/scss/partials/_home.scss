@@ -668,15 +668,15 @@
                     &:hover {
                         .project-section__image-inner {
                             // img {
-                            transform: rotateY(20deg);
+                            transform: rotateY(13deg);
                             // }
                             @include respond-to(920) {
-                                transform: rotateY(18deg) translateX(5%);
+                                transform: rotateY(10deg) translateX(5%);
                             }
                         }
                         .project-section__info-inner {
                             // img {
-                            transform: rotateY(-20deg);
+                            transform: rotateY(-13deg);
                             // }
                         }
                     }
@@ -686,6 +686,10 @@
                     // padding-left: 2em;
                     // position: relative;
                     transform-origin: left;
+                    @include respond-to(700) {
+                        padding-left: 2em;
+                        padding-right: 0;
+                    }
                     &-inner {
                         &:after {
                             right: 0em;
@@ -860,15 +864,15 @@
         &:hover {
             .project-section__image-inner {
                 // img {
-                transform: rotateY(-20deg);
+                transform: rotateY(-13deg);
                 @include respond-to(920) {
-                    transform: rotateY(-18deg) translateX(-5%);
+                    transform: rotateY(-10deg) translateX(-5%);
                 }
                 // }
             }
             .project-section__info-inner {
                 // img {
-                transform: rotateY(20deg);
+                transform: rotateY(13deg);
                 // }
             }
         }
@@ -910,7 +914,7 @@
                     left: -6em;
                 }
                 @include respond-to(920) {
-                    left: -2.5em;
+                    left: -3em;
                 }
             }
             &:after {
@@ -927,7 +931,7 @@
                 // margin-left: 2em;
             }
             @include respond-to(920) {
-                margin-left: -2.5em;
+                margin-left: -3em;
             }
         }
     }
@@ -1027,6 +1031,9 @@
             @include respond-to(1200) {
                 font-size: ms(8);
             }
+        }
+        a{
+            color: #fff;
         }
     }
     &__button {
@@ -1487,6 +1494,10 @@
     @include respond-to(600) {
         font-size: ms(5);
     }
+    &:hover{
+        text-decoration: underline;
+        color: #fff;
+    }
 }
 
 .email-link {
@@ -1504,10 +1515,16 @@
         .active & {
             animation: fade-in-up 700ms ease-out 1100ms forwards;
         }
+        &:hover{
+            color: #ea4c89;
+        }
     }
     &.Behance {
         .active & {
             animation: fade-in-up 700ms ease-out 1200ms forwards;
+        }
+        &:hover{
+            color: #0b7dff;
         }
     }
 }

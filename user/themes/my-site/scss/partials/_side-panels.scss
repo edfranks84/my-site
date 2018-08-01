@@ -91,6 +91,9 @@
         .cross-bar2 {
             stroke-linecap: round;
         }
+        &:hover{
+            cursor: pointer;
+        }
     }
     .lines {
         position: fixed;
