@@ -378,7 +378,6 @@ html {
           text-size-adjust: 100%; }
 
 body {
-  overflow-x: hidden;
   color: #FFFFFF;
   font-family: "Barlow", sans-serif;
   font-size: 14px;
@@ -1893,9 +1892,6 @@ em {
       .project-section .bottom-title {
         font-size: 8.9161em;
         bottom: -2rem; } }
-    @media (min-width: 57.5em) {
-      .project-section .bottom-title {
-        width: calc(100% / 6 * 4); } }
   .project-section__content {
     position: relative;
     display: -ms-flexbox;
@@ -3513,8 +3509,7 @@ html.fp-enabled,
           top: 150px; }
         .responsive-bottom .responsive-mobile:nth-child(3) {
           top: 10px;
-          left: 0;
-          margin-left: 0; } }
+          left: 0; } }
     @media (min-width: 37.5em) {
       .responsive-bottom .responsive-mobile {
         width: 31%; }
@@ -3526,8 +3521,7 @@ html.fp-enabled,
           left: 10px; }
         .responsive-bottom .responsive-mobile:nth-child(3) {
           top: 100px;
-          left: 0;
-          margin-left: 0; } }
+          left: 0; } }
     @media (min-width: 0em) and (max-width: 51.1875em) {
       .responsive-bottom .responsive-mobile:nth-child(1) {
         opacity: 0;

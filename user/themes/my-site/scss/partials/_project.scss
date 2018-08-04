@@ -1210,7 +1210,7 @@
                     // top: 100px;
                     top: 10px;
                     left: 0;
-                    margin-left: 0;
+                    // margin-left: 0;
                 }
             }
             @include respond-to(600) {
@@ -1238,7 +1238,7 @@
                     // top: 250px;
                     top: 100px;
                     left: 0;
-                    margin-left: 0;
+                    // margin-left: 0;
                 }
             }
             @include respond-to(0to819){

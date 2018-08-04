@@ -1,18 +1,18 @@
-$(document).ready(function() {
+// $(document).ready(function() {
 
-    // var rellax = new Rellax('.rellax');
+//     var rellax = new Rellax('.rellax');
 
-});
+// });
 
 
-$(window).on("load resize", function(e) {
+$(window).on("load", function(e) {
     if ($(window).width() > 820) {
         var rellax = new Rellax('.rellax');
         // $('.inner-pages__wrap').enllax();
         // $('.responsive-top').enllax();
         // $('.responsive-bottom').enllax();
-        $(function() {
-            var controller = new ScrollMagic.Controller();
+        // $(function() {
+            // var controller = new ScrollMagic.Controller();
 
             // build tween
             // var tweenTopImage = new TimelineMax()
@@ -82,18 +82,18 @@ $(window).on("load resize", function(e) {
             //     duration: window.innerHeight * 2
             // }).setTween(tweenResponsiveMobile2).addTo(controller);
 
-            var tweenResponsiveMobile3 = new TimelineMax()
-                .add([
-                    TweenMax.fromTo(".responsive-mobile:nth-child(3)", 1, { y: 150 }, { y: -600, ease: Linear.easeNone, force3D: true })
-                ]);
+            // var tweenResponsiveMobile3 = new TimelineMax()
+            //     .add([
+            //         TweenMax.fromTo(".responsive-mobile:nth-child(3)", 1, { y: 150 }, { y: -600, ease: Linear.easeNone, force3D: true })
+            //     ]);
 
-            new ScrollMagic.Scene({
-                triggerElement: ".responsive-bottom",
-                triggerHook: "onEnter",
-                duration: window.innerHeight * 2
-            }).setTween(tweenResponsiveMobile3).addTo(controller);
+            // new ScrollMagic.Scene({
+            //     triggerElement: ".responsive-bottom",
+            //     triggerHook: "onEnter",
+            //     duration: window.innerHeight * 2
+            // }).setTween(tweenResponsiveMobile3).addTo(controller);
 
-        });
+        // });
 
     }
 });
