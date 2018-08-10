@@ -1296,7 +1296,7 @@ em {
         left: auto;
         right: 0; } }
     .page-loaded .hero .bottom-title {
-      opacity: 0.05;
+      opacity: 0.025;
       -ms-transform: translateY(0);
           transform: translateY(0); }
   .hero__content {
@@ -1310,6 +1310,9 @@ em {
       position: relative;
       margin-top: 1em;
       width: 100%; }
+      @media (min-width: 87.5em) {
+        .hero__content--inner {
+          font-size: calc(1em + 0.5vh); } }
     .hero__content span {
       opacity: 0;
       display: inline-block; }
@@ -1359,7 +1362,12 @@ em {
           transform-origin: center top; }
       .page-loaded .hero__content .char9 {
         animation: swingIn 1200ms ease-in-out forwards; }
-    .hero__content .char4, .hero__content .char5, .hero__content .char6, .hero__content .char7, .hero__content .char8, .hero__content .char9 {
+    .hero__content .char4,
+    .hero__content .char5,
+    .hero__content .char6,
+    .hero__content .char7,
+    .hero__content .char8,
+    .hero__content .char9 {
       color: transparent;
       -webkit-text-stroke-color: #fff;
       -webkit-text-stroke-width: 2px; }
@@ -1381,101 +1389,107 @@ em {
     @media (min-width: 43.75em) {
       .hero h1 {
         font-size: 6.19174em; } }
-  .hero h3 {
-    font-family: "Barlow", sans-serif;
-    font-size: 1.2em;
-    letter-spacing: 0.25px;
-    opacity: 0;
-    margin-top: 0;
-    margin-bottom: 1em;
-    padding-left: 1.5rem;
-    transition: transform 750ms ease-out 2950ms, opacity 750ms ease-out 2950ms;
-    -ms-transform: translateY(20px);
-        transform: translateY(20px); }
-    @media (min-width: 30em) {
-      .hero h3 {
-        margin-bottom: 3em; } }
-    @media (min-width: 57.5em) {
-      .hero h3 {
-        padding-left: 2rem; } }
-  .hero .button {
-    -ms-transform: scaleX(0);
-        transform: scaleX(0);
-    -ms-transform-origin: left;
-        transform-origin: left;
-    margin-left: 1.5rem;
-    transition: transform 600ms ease-out 3000ms; }
-    @media (min-width: 57.5em) {
-      .hero .button {
-        margin-left: 2rem; } }
-    .hero .button a:after {
-      content: "";
-      display: block;
+    @media (min-width: 87.5em) {
+      .hero h1 {
+        margin-bottom: 0.2em; } }
+    .hero h1 h3 {
+      font-family: "Barlow", sans-serif;
+      font-size: 1.2em;
+      letter-spacing: 0.25px;
+      opacity: 0;
+      margin-top: 0;
+      margin-bottom: 1em;
+      padding-left: 1.5rem;
+      transition: transform 750ms ease-out 2950ms, opacity 750ms ease-out 2950ms;
+      -ms-transform: translateY(20px);
+          transform: translateY(20px); }
+      @media (min-width: 30em) {
+        .hero h1 h3 {
+          margin-bottom: 3em; } }
+      @media (min-width: 57.5em) {
+        .hero h1 h3 {
+          padding-left: 2rem; } }
+      @media (min-width: 87.5em) {
+        .hero h1 h3 {
+          margin-bottom: 2.5em; } }
+    .hero h1 .button {
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+      -ms-transform-origin: left;
+          transform-origin: left;
+      margin-left: 1.5rem;
+      transition: transform 600ms ease-out 3000ms; }
+      @media (min-width: 57.5em) {
+        .hero h1 .button {
+          margin-left: 2rem; } }
+      .hero h1 .button a:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #0d84f2;
+        transition: width 500ms ease-out 3600ms, opacity 100ms ease-out 4100ms; }
+    .hero h1 .scroll {
       position: absolute;
-      top: 0;
-      right: 0;
-      height: 100%;
-      width: 100%;
-      background-color: #0d84f2;
-      transition: width 500ms ease-out 3600ms, opacity 100ms ease-out 4100ms; }
-  .hero .scroll {
-    position: absolute;
-    bottom: 5em;
-    right: -4%;
-    right: -50px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 0.83333em;
-    -ms-transform: rotate(90deg);
-        transform: rotate(90deg);
-    overflow: hidden;
-    z-index: 100;
-    color: #fff;
-    opacity: 0;
-    transition: opacity 500ms ease-out 300ms, right 800ms ease-out 400ms; }
-    @media (min-width: 26.25em) {
-      .hero .scroll {
-        bottom: 10%; } }
-    .hero .scroll:after {
-      content: "";
-      display: inline-block;
-      width: 5em;
-      margin-left: 10px;
-      height: 0px;
-      background-image: linear-gradient(to right, transparent, rgba(13, 132, 242, 0.75));
-      animation: scroll 1500ms ease-out infinite both;
-      position: relative;
-      top: -2px;
-      transition: height 300ms ease-out 1100ms; }
-  .hero .vert-text {
-    position: absolute;
-    top: -1.5rem;
-    left: 0;
-    font-family: "Barlow Condensed", sans-serif;
-    text-transform: uppercase;
-    font-size: 0.935em;
-    letter-spacing: 2px;
-    opacity: 0;
-    margin-top: 4rem;
-    transition: margin 400ms ease-out 2900ms, opacity 400ms ease-out 2900ms; }
-    .page-loaded .hero .vert-text {
-      margin-top: 0rem;
+      bottom: 5em;
+      right: -4%;
+      right: -50px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 0.83333em;
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+      overflow: hidden;
+      z-index: 100;
+      color: #fff;
+      opacity: 0;
+      transition: opacity 500ms ease-out 300ms, right 800ms ease-out 400ms; }
+      @media (min-width: 26.25em) {
+        .hero h1 .scroll {
+          bottom: 10%; } }
+      .hero h1 .scroll:after {
+        content: "";
+        display: inline-block;
+        width: 5em;
+        margin-left: 10px;
+        height: 0px;
+        background-image: linear-gradient(to right, transparent, rgba(13, 132, 242, 0.75));
+        animation: scroll 1500ms ease-out infinite both;
+        position: relative;
+        top: -2px;
+        transition: height 300ms ease-out 1100ms; }
+    .hero h1 .vert-text {
+      position: absolute;
+      top: -1.5rem;
+      left: 0;
+      font-family: "Barlow Condensed", sans-serif;
+      text-transform: uppercase;
+      font-size: 0.935em;
+      letter-spacing: 2px;
+      opacity: 0;
+      margin-top: 4rem;
+      transition: margin 400ms ease-out 2900ms, opacity 400ms ease-out 2900ms; }
+      .page-loaded .hero h1 .vert-text {
+        margin-top: 0rem;
+        opacity: 0.5; }
+    .page-loaded .hero h1.inviewport .scroll {
+      opacity: 1;
+      right: -19px; }
+      .page-loaded .hero h1.inviewport .scroll:after {
+        height: 4px; }
+    .page-loaded .hero h1.inviewport h3 {
+      -ms-transform: translateY(0);
+          transform: translateY(0);
       opacity: 0.5; }
-  .page-loaded .hero.inviewport .scroll {
-    opacity: 1;
-    right: -19px; }
-    .page-loaded .hero.inviewport .scroll:after {
-      height: 4px; }
-  .page-loaded .hero.inviewport h3 {
-    -ms-transform: translateY(0);
-        transform: translateY(0);
-    opacity: 0.5; }
-  .page-loaded .hero.inviewport .button {
-    -ms-transform: scaleX(1);
-        transform: scaleX(1); }
-    .page-loaded .hero.inviewport .button a:after {
-      width: 0;
-      opacity: 0; }
+    .page-loaded .hero h1.inviewport .button {
+      -ms-transform: scaleX(1);
+          transform: scaleX(1); }
+      .page-loaded .hero h1.inviewport .button a:after {
+        width: 0;
+        opacity: 0; }
 
 @keyframes scroll {
   0% {
@@ -1490,40 +1504,39 @@ em {
   100% {
     transform: scaleX(1);
     transform-origin: left; } }
-
-.profile-pic {
-  height: 100%;
-  width: 85%;
-  position: absolute;
-  right: -20%;
-  top: 0;
-  background-image: url("../images/edfranks.png");
-  background-repeat: no-repeat;
-  background-position: 100px 25px;
-  background-size: cover;
-  mix-blend-mode: multiply;
-  opacity: 0;
-  -ms-transform: translateX(30%);
-      transform: translateX(30%);
-  transition: opacity 1000ms ease-out 2800ms, transform 1000ms ease-out 2800ms; }
-  @media (min-width: 30em) {
-    .profile-pic {
-      background-size: contain; } }
-  @media (min-width: 37.5em) {
-    .profile-pic {
-      width: 70%; } }
-  @media (min-width: 43.75em) {
-    .profile-pic {
-      background-position: 100% 25px; } }
-  @media (min-width: 51.25em) {
-    .profile-pic {
-      width: 50%;
-      right: -5%;
-      background-position: 75% 25px; } }
-  .page-loaded .profile-pic {
-    opacity: 0.25;
-    -ms-transform: translateX(0);
-        transform: translateX(0); }
+  .hero .profile-pic {
+    height: 100%;
+    width: 85%;
+    position: absolute;
+    right: -20%;
+    top: 0;
+    background-image: url("../images/edfranks.png");
+    background-repeat: no-repeat;
+    background-position: 100px 25px;
+    background-size: cover;
+    mix-blend-mode: multiply;
+    opacity: 0;
+    -ms-transform: translateX(30%);
+        transform: translateX(30%);
+    transition: opacity 1000ms ease-out 2800ms, transform 1000ms ease-out 2800ms; }
+    @media (min-width: 30em) {
+      .hero .profile-pic {
+        background-size: contain; } }
+    @media (min-width: 37.5em) {
+      .hero .profile-pic {
+        width: 70%; } }
+    @media (min-width: 43.75em) {
+      .hero .profile-pic {
+        background-position: 100% 25px; } }
+    @media (min-width: 51.25em) {
+      .hero .profile-pic {
+        width: 50%;
+        right: -5%;
+        background-position: 75% 25px; } }
+    .page-loaded .hero .profile-pic {
+      opacity: 0.25;
+      -ms-transform: translateX(0);
+          transform: translateX(0); }
 
 .bg-circle {
   background: transparent;
@@ -1972,7 +1985,7 @@ em {
           margin-left: -6em; } }
       @media (min-width: 57.5em) {
         .project-section__image img {
-          margin-left: -3em; } }
+          margin-left: -4.5em; } }
   .project-section__info {
     width: calc(100% / 6 * 5);
     width: calc(100% - 1em);
@@ -2194,7 +2207,8 @@ em {
         margin-right: calc(100% / 6 * 1); } }
     .about .about-section__content h6,
     .about .about-section__content p {
-      opacity: 0.7; }
+      opacity: 0.7;
+      margin: 1.75em 0 0.5em; }
       @media (min-width: 26.25em) {
         .about .about-section__content h6,
         .about .about-section__content p {
@@ -2203,8 +2217,9 @@ em {
         .about .about-section__content h6,
         .about .about-section__content p {
           padding-left: 0; } }
+    .about .about-section__content h6 {
+      font-size: 17px; }
     .about .about-section__content p {
-      margin: 2em 0 0.75em;
       color: #989898; }
   .about .about-section__vert {
     position: absolute;
@@ -2812,7 +2827,7 @@ html.fp-enabled,
     @media (min-width: 33.75em) {
       .project-intro .project-details__item {
         margin-right: auto; } }
-    @media (min-width: 60em) {
+    @media (min-width: 72.5em) {
       .project-intro .project-details__item {
         margin-right: 3em; } }
     .project-intro .project-details__item:last-child {
@@ -3518,7 +3533,7 @@ html.fp-enabled,
           top: 0; }
         .responsive-bottom .responsive-mobile:nth-child(2) {
           top: 55px;
-          left: 10px; }
+          left: -2px; }
         .responsive-bottom .responsive-mobile:nth-child(3) {
           top: 100px;
           left: 0; } }

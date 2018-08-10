@@ -8,4 +8,4 @@ vert_text: A Bit
 
 ######I Love to design, especially web design, logos and typography and enjoy learning new web skills and techniques. 
 
-Football addict, massive tottenham hotspur fan. Likes rock music (foo fighters, blink 182, red hot chili peppers etc).
+Football addict, Tottenham Hotspur fan, loves rock music (foo fighters, blink 182, red hot chili peppers etc).

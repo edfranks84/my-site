@@ -236,7 +236,7 @@
                 // flex: auto;
                 margin-right: auto;
             }
-            @include respond-to(960){
+            @include respond-to(1160){
                 // flex: auto;
                 margin-right: 3em;
             }
@@ -1230,7 +1230,8 @@
                     // transform: translateY(40%);
                     // top: 200px;
                     top: 55px;
-                    left: 10px;
+                    // left: 10px;
+                    left: -2px;
                 }
                 &:nth-child(3) {
                     // transform: translateY(20%);
