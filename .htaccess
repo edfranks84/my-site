@@ -1,3 +1,8 @@
+
+AddType image/svg+xml svg svgz
+AddEncoding gzip svgz
+AddType image/svg+xml .svg .svgz
+
 <IfModule mod_rewrite.c>
 
 RewriteEngine On
@@ -74,5 +79,4 @@ Options -Indexes
 DirectoryIndex index.php index.html index.htm
 # End - Prevent Browsing and Set Default Resources
 
-AddType image/svg+xml svg svgz
-AddEncoding gzip svgz
+
