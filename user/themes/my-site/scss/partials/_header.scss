@@ -120,7 +120,7 @@
                     width: 1.5rem;
                     transform: translate(0%, -50%);
                     // background: url(/grav-admin/user/themes/my-site/images/project-folder.svg);
-                    background: url(../images/project-folder.svg);
+                    background-image: url(../images/project-folder.svg);
                     background-size: contain;
                     background-repeat: no-repeat;
                     opacity: 0.6;
@@ -130,7 +130,7 @@
                     opacity: 1;
                     &:before {
                         opacity: 1;
-                        background: url(../images/project-folder-open.svg);
+                        background-image: url(../images/project-folder-open.svg);
                     }
                 }
             }

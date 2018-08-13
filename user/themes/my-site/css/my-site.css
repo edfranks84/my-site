@@ -856,7 +856,7 @@ em {
         width: 1.5rem;
         -ms-transform: translate(0%, -50%);
             transform: translate(0%, -50%);
-        background: url(../images/project-folder.svg);
+        background-image: url(../images/project-folder.svg);
         background-size: contain;
         background-repeat: no-repeat;
         opacity: 0.6;
@@ -865,7 +865,7 @@ em {
         opacity: 1; }
         .main-nav li:last-child a:hover:before {
           opacity: 1;
-          background: url(../images/project-folder-open.svg); }
+          background-image: url(../images/project-folder-open.svg); }
     .main-nav li:not(:last-child) a {
       position: relative; }
       .main-nav li:not(:last-child) a:after {
