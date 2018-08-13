@@ -1765,7 +1765,14 @@ em {
 
 /*Projects*/
 .home-section {
-  position: relative; }
+  position: relative;
+  padding: 2.5em 0; }
+  @media (min-width: 37.5em) {
+    .home-section {
+      padding: 4em 0; } }
+  @media (min-width: 57.5em) {
+    .home-section {
+      padding: 6em 0; } }
 
 .home-panels section:nth-child(odd) .project-section .bg-image {
   right: auto;
@@ -2070,8 +2077,11 @@ em {
     .project-section__title a {
       color: #fff; }
   .project-section__button {
-    margin-top: 1em;
+    margin-top: 2em;
     margin-right: auto; }
+    @media (min-width: 57.5em) {
+      .project-section__button {
+        margin-top: 1em; } }
   .project-section .button {
     -ms-transform: scaleX(0);
         transform: scaleX(0);

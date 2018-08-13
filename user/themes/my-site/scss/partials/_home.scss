@@ -633,6 +633,15 @@
 /////////////////////////////////////
 .home-section {
     position: relative;
+    padding: 2.5em 0;
+    // background-color: #fff;
+    // @include clearfix;
+    @include respond-to(600) {
+        padding: 4em 0;
+    }
+    @include respond-to(920) {
+        padding: 6em 0;
+    }
 }
 
 .home-panels {
@@ -1005,16 +1014,19 @@
         }
     }
     &__button {
-        margin-top: 1em;
+        margin-top: 2em;
         margin-right: auto;
+        @include respond-to(920) {
+            margin-top: 1em;
+        }
     }
     .button {
         transform: scaleX(0);
         transform-origin: left; // margin-left: 1.5rem;
         transition: transform 600ms ease-out 900ms;
-        @include respond-to(920) {
+        //@include respond-to(920) {
             // margin-left: 2rem;
-        } // &:before {
+        //}  &:before {
         //     opacity: 0;
         //     transition: opacity 400ms ease-out 3900ms;
         // }
