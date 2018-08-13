@@ -865,7 +865,7 @@ em {
         opacity: 1; }
         .main-nav li:last-child a:hover:before {
           opacity: 1;
-          background: url(/grav-admin/user/themes/my-site/images/project-folder-open.svg); }
+          background: url(../images/project-folder-open.svg); }
     .main-nav li:not(:last-child) a {
       position: relative; }
       .main-nav li:not(:last-child) a:after {
