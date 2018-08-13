@@ -872,7 +872,7 @@
         } // padding-right: 2em;
         &-inner {
             transform: rotateY(0);
-            transition: transform 700ms ease-out;
+            transition: transform 600ms ease-out;
             &:before,
             &:after {
                 content: "";
@@ -883,17 +883,17 @@
                 width: 100%;
                 height: 100%;
                 display: block;
-                transition: width 400ms ease-out 850ms, opacity 10ms 1250ms ease;
+                transition: width 300ms ease-out 750ms, opacity 10ms 1050ms ease;
                 @include respond-to(700) {
                     left: -6em;
                 }
                 @include respond-to(920) {
-                    left: -3em;
+                    left: -4.5em;
                 }
             }
             &:after {
                 background-color: $base-dark;
-                transition: width 500ms ease-out 550ms;
+                transition: width 400ms ease-out 550ms;
             }
         }
         img {
