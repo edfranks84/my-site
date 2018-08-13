@@ -2092,8 +2092,7 @@ em {
     -ms-transform: scaleX(1);
         transform: scaleX(1); }
     .active .project-section .project-section__image-inner:after, .active .project-section .project-section__image-inner:before {
-      width: 0;
-      opacity: 0; }
+      width: 0; }
   .active .project-section .project-section__title h1 {
     animation: fade-in-up-big 600ms ease-out 600ms forwards; }
   .active .project-section .project-details__item-key {
