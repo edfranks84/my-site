@@ -1969,7 +1969,7 @@ em {
         content: "";
         position: absolute;
         top: 0;
-        bottom: 0;
+        bottom: -3px;
         left: 0em;
         background-color: #0d84f2;
         width: 100%;
