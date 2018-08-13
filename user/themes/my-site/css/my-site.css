@@ -856,7 +856,7 @@ em {
         width: 1.5rem;
         -ms-transform: translate(0%, -50%);
             transform: translate(0%, -50%);
-        background: url(/grav-admin/user/themes/my-site/images/project-folder.svg);
+        background: url(../images/project-folder.svg);
         background-size: contain;
         background-repeat: no-repeat;
         opacity: 0.6;
