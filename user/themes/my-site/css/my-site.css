@@ -1300,7 +1300,7 @@ em {
       -ms-transform: translateY(0);
           transform: translateY(0); }
   .hero__content {
-    padding: 12em 13% 2em; }
+    padding: 10em 13% 2em; }
     @media (min-width: 30em) {
       .hero__content {
         padding: 4em calc(100% / 6);
