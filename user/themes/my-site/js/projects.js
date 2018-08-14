@@ -51,11 +51,11 @@ $(document).ready(function() {
                 spaceBetween: 10,
                 freeMode: true,
                 direction: 'vertical',
-                slidesPerView: 3,
-                pagination: {
-                    el: '.swiper-pagination',
-                    type: 'fraction',
-                }
+                slidesPerView: 3
+                //pagination: {
+                  //  el: '.swiper-pagination',
+                    //type: 'fraction',
+                //}
             });
         } else if (screenWidth > 621 && isLandscape()) {
 

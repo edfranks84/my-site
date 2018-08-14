@@ -68,18 +68,18 @@
             <div class="responsive-mobile mobile-home" >
                 {{ page.media['mobile-home.png'].html('', '', 'mobile home') }} 
             </div>
-            <div class="responsive-tablet tablet" >
+            <div class="responsive-tablet tablet rellax" data-rellax-speed="4" data-rellax-percentage="0.3">
                 {{ page.media['tablet.png'].html('Responsive Tablet', 'Responsive Tablet', 'table-img') }} 
             </div>  
         </div>
         <div class="responsive-bottom" data-scroll-activate="" data-scroll-activetolerance="200">
-            <div class="responsive-mobile mobile1">
+            <div class="responsive-mobile mobile1 rellax" data-rellax-speed="-1" data-rellax-percentage="0.35">
                 {{ page.media['mobile1.png'].html('mobile', 'Mobile', 'mobile1_img') }} 
             </div>
-            <div class="responsive-mobile mobile2">
+            <div class="responsive-mobile mobile2 rellax" data-rellax-speed="2" data-rellax-percentage="0.15">
                 {{ page.media['mobile2.png'].html('mobile', 'Mobile', 'mobile2_img') }} 
             </div>
-            <div class="responsive-mobile mobile3" >
+            <div class="responsive-mobile mobile3 rellax" data-rellax-speed="5" data-rellax-percentage="0.15">
                 {{ page.media['mobile3.png'].html('mobile', 'Mobile', 'mobile3_img') }} 
             </div>
         </div>
@@ -103,7 +103,7 @@
                 </a>
             {% endif %}
 
-            <a class="project-link" href="/grav-admin/projects/vaujany" style="background-image: url(/grav-admin/user/pages/04.projects/01.vaujany/main.jpg);;">
+            <a class="project-link" href="../projects/vaujany" style="background-image: url(/user/pages/04.projects/01.vaujany/main.jpg);">
                 <span>Vaujany Ski Company</span>
             </a>
 
