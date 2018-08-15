@@ -2758,8 +2758,7 @@ html.fp-enabled,
       display: block; }
       @media (min-width: 820px) and (orientation: landscape) {
         .project-top__image:after {
-          padding-top: 85%;
-          padding-top: 42vh; } }
+          padding-top: 40vh; } }
       @media (min-width: 57.5em) {
         .project-top__image:after {
           padding-top: 64%; } }
@@ -2814,7 +2813,7 @@ html.fp-enabled,
         font-size: 2.98598em; } }
     @media (min-width: 46.25em) {
       .project-top__title {
-        font-size: 4.29982em; } }
+        font-size: 3.58318em; } }
     @media (min-width: 57.5em) {
       .project-top__title {
         font-size: 6vw; } }
