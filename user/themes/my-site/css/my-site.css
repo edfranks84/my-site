@@ -2758,7 +2758,7 @@ html.fp-enabled,
       display: block; }
       @media (min-width: 820px) and (orientation: landscape) {
         .project-top__image:after {
-          padding-top: 100%; } }
+          padding-top: 85%; } }
       @media (min-width: 57.5em) {
         .project-top__image:after {
           padding-top: 64%; } }
@@ -2779,7 +2779,7 @@ html.fp-enabled,
     max-width: 42em; }
     @media (min-width: 37.5em) {
       .project-top__details {
-        width: 80%; } }
+        width: 90%; } }
     @media (min-width: 51.25em) {
       .project-top__details {
         position: absolute;
@@ -2807,13 +2807,11 @@ html.fp-enabled,
         transform: translateY(100%);
     opacity: 0;
     display: inline-block;
-    letter-spacing: -2px; }
+    letter-spacing: -2px;
+    font-size: 3.58318em; }
     @media (min-width: 26.25em) {
       .project-top__title {
         font-size: 2.98598em; } }
-    @media (min-width: 51.25em) {
-      .project-top__title {
-        font-size: 3.58318em; } }
     @media (min-width: 57.5em) {
       .project-top__title {
         font-size: 6vw; } }
