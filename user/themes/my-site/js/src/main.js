@@ -8,7 +8,7 @@ $(document).ready(function() {
         sectionSelector: '.home-section',
         showActiveTooltip: true,
         touchSensitivity: 10,
-        responsiveWidth: 820
+        responsiveWidth: 740
     });
 
     var scroll = new SmoothScroll('[data-scroll]');
