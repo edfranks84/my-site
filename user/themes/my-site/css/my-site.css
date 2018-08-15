@@ -2758,7 +2758,8 @@ html.fp-enabled,
       display: block; }
       @media (min-width: 820px) and (orientation: landscape) {
         .project-top__image:after {
-          padding-top: 85%; } }
+          padding-top: 85%;
+          padding-top: 42vh; } }
       @media (min-width: 57.5em) {
         .project-top__image:after {
           padding-top: 64%; } }
@@ -2807,11 +2808,13 @@ html.fp-enabled,
         transform: translateY(100%);
     opacity: 0;
     display: inline-block;
-    letter-spacing: -2px;
-    font-size: 4.29982em; }
+    letter-spacing: -2px; }
     @media (min-width: 26.25em) {
       .project-top__title {
         font-size: 2.98598em; } }
+    @media (min-width: 46.25em) {
+      .project-top__title {
+        font-size: 4.29982em; } }
     @media (min-width: 57.5em) {
       .project-top__title {
         font-size: 6vw; } }
