@@ -33,7 +33,7 @@
 .project-top {
     position: relative;
     padding: 9em 0 5em;
-    @include respond-to(700) {
+    @include respond-to(820) {
         min-height: 101vh;
         padding: 6em 0;
     } // .bg-image {
@@ -138,11 +138,14 @@
             content: "";
             padding-top: 70%;
             display: block;
+            @media (min-width: 820px) and (orientation: landscape){
+                padding-top: 100%;
+            }
             @include respond-to(920) {
                 padding-top: 64%;
             }
         }
-        @include respond-to(700) {
+        @include respond-to(820) {
             width: 85%;
         }
         @include respond-to(920) {
@@ -161,7 +164,7 @@
         @include respond-to(600) {
             width: 80%;
         }
-        @include respond-to(700) {
+        @include respond-to(820) {
             position: absolute;
             bottom: -4.2rem;
             display: inline-block; // top: 90%;
@@ -196,7 +199,7 @@
         @include respond-to(420) {
             font-size: ms(6);
         }
-        @include respond-to(700) {
+        @include respond-to(820) {
             font-size: ms(7);
         }
         @include respond-to(920) {

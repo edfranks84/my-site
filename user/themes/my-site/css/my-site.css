@@ -2669,7 +2669,7 @@ html.fp-enabled,
 .project-top {
   position: relative;
   padding: 9em 0 5em; }
-  @media (min-width: 43.75em) {
+  @media (min-width: 51.25em) {
     .project-top {
       min-height: 101vh;
       padding: 6em 0; } }
@@ -2756,10 +2756,13 @@ html.fp-enabled,
       content: "";
       padding-top: 70%;
       display: block; }
+      @media (min-width: 820px) and (orientation: landscape) {
+        .project-top__image:after {
+          padding-top: 100%; } }
       @media (min-width: 57.5em) {
         .project-top__image:after {
           padding-top: 64%; } }
-    @media (min-width: 43.75em) {
+    @media (min-width: 51.25em) {
       .project-top__image {
         width: 85%; } }
     @media (min-width: 57.5em) {
@@ -2777,7 +2780,7 @@ html.fp-enabled,
     @media (min-width: 37.5em) {
       .project-top__details {
         width: 80%; } }
-    @media (min-width: 43.75em) {
+    @media (min-width: 51.25em) {
       .project-top__details {
         position: absolute;
         bottom: -4.2rem;
@@ -2808,7 +2811,7 @@ html.fp-enabled,
     @media (min-width: 26.25em) {
       .project-top__title {
         font-size: 2.98598em; } }
-    @media (min-width: 43.75em) {
+    @media (min-width: 51.25em) {
       .project-top__title {
         font-size: 3.58318em; } }
     @media (min-width: 57.5em) {
