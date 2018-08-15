@@ -2053,6 +2053,7 @@ em {
     @media (min-width: 43.75em) {
       .project-section__title {
         margin-top: 0;
+        margin-left: -1.5em;
         width: 140%;
         margin-right: -40%; } }
     @media (min-width: 78.75em) {
@@ -2772,7 +2773,8 @@ html.fp-enabled,
     display: inline-block;
     width: 100%;
     margin-top: 2em;
-    overflow: hidden; }
+    overflow: hidden;
+    max-width: 42em; }
     @media (min-width: 37.5em) {
       .project-top__details {
         width: 80%; } }
@@ -3365,6 +3367,8 @@ html.fp-enabled,
     .responsive-project {
       margin-top: 5em;
       padding: 4em 0 6em; } }
+  .responsive-project__inner {
+    margin: 0 auto; }
 
 .responsive-homepage__bg {
   position: absolute;

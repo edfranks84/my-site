@@ -977,7 +977,8 @@
             // margin-left: -2em;
         }
         @include respond-to(700) {
-            margin-top: 0; // margin-left: -1.5em;
+            margin-top: 0; 
+            margin-left: -1.5em;
             width: 140%;
             margin-right: -40%;
         }

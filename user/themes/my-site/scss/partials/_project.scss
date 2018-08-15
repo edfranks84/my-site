@@ -157,6 +157,7 @@
         width: 100%;
         margin-top: 2em;
         overflow: hidden;
+        max-width: 42em;
         @include respond-to(600) {
             width: 80%;
         }
@@ -956,6 +957,9 @@
         @include respond-to(920) {
             margin-top: 5em;
             padding: 4em 0 6em;
+        }
+        &__inner{
+            margin: 0 auto;
         }
     }
     &-homepage__bg {
