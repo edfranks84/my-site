@@ -664,6 +664,9 @@
                     // @include respond-to(700) {
                     //     flex-direction: row;
                     // }
+                    @media (min-width: 700px) and (orientation: landscape){
+                        flex-direction: row;    
+                    }
                     @include respond-to(920) {
                         flex-direction: row;
                     }
@@ -690,6 +693,10 @@
                     //     padding-left: 2em;
                     //     padding-right: 0;
                     // }
+                    @media (min-width: 700px) and (orientation: landscape){
+                        padding-left: 2em;
+                        padding-right: 0;    
+                    }
                     @include respond-to(920) {
                         padding-left: 2em;
                         padding-right: 0;
@@ -701,6 +708,9 @@
                             // @include respond-to(700) {
                             //     right: -6em;
                             // }
+                            @media (min-width: 700px) and (orientation: landscape){
+                                right: -6em;   
+                            }
                             @include respond-to(920) {
                                 right: -4.5em;
                             }
@@ -711,6 +721,9 @@
                             // @include respond-to(700) {
                             //     right: -6em;
                             // }
+                            @media (min-width: 700px) and (orientation: landscape){
+                                right: -6em;   
+                            }
                             @include respond-to(920) {
                                 right: -4.5em;
                             }
@@ -720,6 +733,9 @@
                         // @include respond-to(700) {
                         //     margin-left: 6em;
                         // }
+                        @media (min-width: 700px) and (orientation: landscape){
+                            margin-left: 6em; 
+                        }
                         @include respond-to(920) {
                             margin-left: 4.5em; // margin-right: 2em;
                         }
@@ -752,6 +768,9 @@
                     // @include respond-to(700) {
                         // margin-left: calc(1em - 30%);
                     // }
+                    @media (min-width: 700px) and (orientation: landscape){
+                        margin-left: calc(1em - 30%);
+                    }
                     @include respond-to(920) {
                         margin-left: calc(1em - 30%);
                     }
@@ -855,6 +874,10 @@
         //     flex-direction: row-reverse;
         //     padding: 0;
         // }
+        @media (min-width: 700px) and (orientation: landscape){
+            flex-direction: row-reverse;
+            padding: 0;
+        }
         @include respond-to(920) {
             // align-items: flex-start;
             flex-direction: row-reverse;
@@ -894,6 +917,10 @@
         //     width: calc(100% / 6 * 3);
         //     padding-right: 2em;
         // }
+        @media (min-width: 700px) and (orientation: landscape){
+            width: calc(100% / 6 * 3);
+            padding-right: 2em;
+        }
         @include respond-to(920) {
             width: calc(100% / 6 * 3);
             padding-right: 2em;
@@ -916,6 +943,9 @@
                 // @include respond-to(700) {
                 //     left: -6em;
                 // }
+                @media (min-width: 700px) and (orientation: landscape){
+                    left: -6em;
+                }
                 @include respond-to(920) {
                     left: -4.5em;
                 }
@@ -932,6 +962,9 @@
             // @include respond-to(700) {
             //     margin-left: -6em;
             // }
+            @media (min-width: 700px) and (orientation: landscape){
+                margin-left: -6em;
+            }
             @include respond-to(920) {
                 margin-left: -4.5em;
             }
@@ -952,6 +985,11 @@
         //     perspective: 800px;
         //     perspective-origin: center;
         // }
+        @media (min-width: 700px) and (orientation: landscape){
+            width: calc(100% / 6 * 2);
+            perspective: 800px;
+            perspective-origin: center;
+        }
         @include respond-to(920) {
             width: calc(100% / 6 * 2);
             perspective: 800px;
@@ -981,6 +1019,9 @@
         // @include respond-to(700) {
         //     opacity: 0.3;
         // }
+        @media (min-width: 700px) and (orientation: landscape){
+            opacity: 0.3;
+        }
         @include respond-to(920) {
             opacity: 0.3;
         }
@@ -1006,6 +1047,12 @@
         //     width: 130%;
         //     margin-right: -30%;
         // }
+        @media (min-width: 700px) and (orientation: landscape){
+            margin-top: 0; 
+            margin-left: -1.5em;
+            width: 130%;
+            margin-right: -30%;
+        }
         @include respond-to(920) {
             margin-top: 0; 
             margin-left: -1.5em;
