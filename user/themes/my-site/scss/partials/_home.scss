@@ -661,7 +661,10 @@
                 }
                 &__content {
                     flex-direction: column;
-                    @include respond-to(700) {
+                    // @include respond-to(700) {
+                    //     flex-direction: row;
+                    // }
+                    @include respond-to(920) {
                         flex-direction: row;
                     }
                     &:hover {
@@ -683,7 +686,11 @@
                     // padding-left: 2em;
                     // position: relative;
                     transform-origin: left;
-                    @include respond-to(700) {
+                    // @include respond-to(700) {
+                    //     padding-left: 2em;
+                    //     padding-right: 0;
+                    // }
+                    @include respond-to(920) {
                         padding-left: 2em;
                         padding-right: 0;
                     }
@@ -691,9 +698,9 @@
                         &:after {
                             right: 0em;
                             left: auto;
-                            @include respond-to(700) {
-                                right: -6em;
-                            }
+                            // @include respond-to(700) {
+                            //     right: -6em;
+                            // }
                             @include respond-to(920) {
                                 right: -4.5em;
                             }
@@ -701,18 +708,18 @@
                         &:before {
                             left: auto;
                             right: 0em;
-                            @include respond-to(700) {
-                                right: -6em;
-                            }
+                            // @include respond-to(700) {
+                            //     right: -6em;
+                            // }
                             @include respond-to(920) {
                                 right: -4.5em;
                             }
                         }
                     }
                     img {
-                        @include respond-to(700) {
-                            margin-left: 6em;
-                        }
+                        // @include respond-to(700) {
+                        //     margin-left: 6em;
+                        // }
                         @include respond-to(920) {
                             margin-left: 4.5em; // margin-right: 2em;
                         }
@@ -742,9 +749,11 @@
                     @include respond-to(480) {
                         // margin-right: -1.5em;
                     }
-                    @include respond-to(700) {
+                    // @include respond-to(700) {
+                        // margin-left: calc(1em - 30%);
+                    // }
+                    @include respond-to(920) {
                         margin-left: calc(1em - 30%);
-                        // margin-right: -1.5em;
                     }
                     @include respond-to(1260) {
                         margin-left: 0;
@@ -842,12 +851,14 @@
         @include respond-to(480) {
             padding: 0 calc(100% / 6);
         }
-        @include respond-to(700) {
-            flex-direction: row-reverse;
-            padding: 0;
-        }
+        // @include respond-to(700) {
+        //     flex-direction: row-reverse;
+        //     padding: 0;
+        // }
         @include respond-to(920) {
             // align-items: flex-start;
+            flex-direction: row-reverse;
+            padding: 0;
         }
         @include respond-to(1160) {
             align-items: center;
@@ -879,10 +890,14 @@
         @include respond-to(420) {
             width: calc(100% / 6 * 6);
         }
-        @include respond-to(700) {
+        // @include respond-to(700) {
+        //     width: calc(100% / 6 * 3);
+        //     padding-right: 2em;
+        // }
+        @include respond-to(920) {
             width: calc(100% / 6 * 3);
             padding-right: 2em;
-        } // padding-right: 2em;
+        }
         &-inner {
             transform: rotateY(0);
             transition: transform 700ms ease-out;
@@ -898,9 +913,9 @@
                 height: 100%;
                 display: block;
                 transition: width 400ms ease-out 850ms, opacity 10ms 1250ms ease;
-                @include respond-to(700) {
-                    left: -6em;
-                }
+                // @include respond-to(700) {
+                //     left: -6em;
+                // }
                 @include respond-to(920) {
                     left: -4.5em;
                 }
@@ -914,9 +929,9 @@
             box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.3), 0 8px 40px 0 rgba(0, 0, 0, 0.5);
             transition: transform 500ms ease-out;
             line-height: 0;
-            @include respond-to(700) {
-                margin-left: -6em; // margin-left: 2em;
-            }
+            // @include respond-to(700) {
+            //     margin-left: -6em;
+            // }
             @include respond-to(920) {
                 margin-left: -4.5em;
             }
@@ -932,7 +947,12 @@
         transform-style: preserve-3d;
         perspective: 600px;
         perspective-origin: top center;
-        @include respond-to(700) {
+        // @include respond-to(700) {
+        //     width: calc(100% / 6 * 2);
+        //     perspective: 800px;
+        //     perspective-origin: center;
+        // }
+        @include respond-to(920) {
             width: calc(100% / 6 * 2);
             perspective: 800px;
             perspective-origin: center;
@@ -958,7 +978,10 @@
         @include respond-to(480) {
             opacity: 0;
         }
-        @include respond-to(700) {
+        // @include respond-to(700) {
+        //     opacity: 0.3;
+        // }
+        @include respond-to(920) {
             opacity: 0.3;
         }
         @include respond-to(1200) {
@@ -977,7 +1000,13 @@
         @include respond-to(480) {
             // margin-left: -2em;
         }
-        @include respond-to(700) {
+        // @include respond-to(700) {
+        //     margin-top: 0; 
+        //     margin-left: -1.5em;
+        //     width: 130%;
+        //     margin-right: -30%;
+        // }
+        @include respond-to(920) {
             margin-top: 0; 
             margin-left: -1.5em;
             width: 130%;
