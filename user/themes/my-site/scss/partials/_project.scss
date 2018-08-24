@@ -140,7 +140,7 @@
             display: block;
             @media (min-width: 820px) and (orientation: landscape){
                 // padding-top: 85%;
-                padding-top: 40vh;
+                padding-top: 38vh;
             }
             @include respond-to(920) {
                 padding-top: 64%;
@@ -201,7 +201,7 @@
             font-size: ms(6);
         }
         @include respond-to(740) {
-            font-size: ms(7);
+            font-size: ms(8);
         }
         @include respond-to(920) {
             font-size: 6vw;
@@ -1053,9 +1053,10 @@
             // transform: translateX(-50%);
             opacity: 1; // top: 0;
             // left: 0;
-            left: -5px; // transition: left 650ms ease-out, opacity 650ms ease-out;
+            // left: -5px; // transition: left 650ms ease-out, opacity 650ms ease-out;
             @include respond-to(420) {
                 // transform: translateX(-50%);
+                left: -5px;
             }
             @include respond-to(0to819) {
                 transform: translateX(-50%);
@@ -1187,17 +1188,17 @@
             &:nth-child(1) {
                 // transform: translateX(25%);
                 // transition: top 600ms ease-out, left 600ms ease-out 900ms, opacity 600ms ease-out;
-                left: -30px;
+                // left: -30px;
             }
             &:nth-child(2) {
                 // transform: translateX(-20%);
                 // transition: top 600ms ease-out 500ms, left 600ms ease-out 900ms, opacity 600ms ease-out 500ms;
-                left: 30px;
+                // left: 30px;
             }
             &:nth-child(3) {
                 // transform: translateX(0%);
                 // transition: top 600ms ease-out 900ms, left 600ms ease-out 900ms, opacity 600ms ease-out 900ms;
-                left: -30px;
+                // left: -30px;
             }
             @include respond-to(420) {
                 width: 49%;

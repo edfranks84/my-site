@@ -208,8 +208,9 @@
         }
     }
     .scroll {
+        display: inline-block;
         position: absolute; // bottom: 14%;
-        bottom: 5em;
+        bottom: 6em;
         right: -4%;
         right: -50px;
         font-family: $heading-font;
@@ -219,6 +220,7 @@
         overflow: hidden;
         z-index: 100;
         color: #fff;
+        padding: 0 1em;
         opacity: 0;
         transition: opacity 500ms ease-out 300ms, right 800ms ease-out 400ms;
         @include respond-to(420) {
@@ -274,7 +276,8 @@
         .page-loaded & {
             .scroll {
                 opacity: 1;
-                right: -19px;
+                // right: -19px;
+                right: -30px;
                 &:after {
                     height: 4px;
                 }
@@ -809,7 +812,8 @@
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 3em 0;
+    // padding: 3em 0;
+    padding: 14vh 0;
     @include respond-to(600) {
         padding: 6em 0;
     }
@@ -1444,8 +1448,34 @@
 }
 
 .contact {
+    min-height: 100vh;
     @include respond-to(0to600) {
         padding: 10em 0;
+    }
+    .bg-logo{
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        // width: 50vh;
+        width: 50vw;
+        max-height: 50%;
+        opacity: 0.15;
+        transform: translate(12%, 12%) rotate(-30deg);
+        // transform: rotate(-30deg);
+        background: {
+            image: url("../images/circle-logo.svg");
+            size: contain;
+            repeat: no-repeat;
+            position: right bottom;
+        }
+        @include respond-to(600){
+            width: 50vh;
+        }
+        &:after{
+            content: "";
+            display: block;
+            padding-bottom: 100%;
+        }
     }
 }
 
@@ -1459,7 +1489,7 @@
         margin-right: calc(100% / 6 * 1);
     }
     @include respond-to(1030) {
-        margin-left: auto;
+        // margin-left: auto;
         width: calc(100% / 6 * 3);
         font-size: 1em;
     }
@@ -1485,6 +1515,9 @@
 .contact-section__title {
     position: relative;
     overflow: hidden;
+    @include respond-to(0to600) {
+        font-size: 14px;
+    }
     @include respond-to(700) {
         margin-left: -1.5em;
     }
