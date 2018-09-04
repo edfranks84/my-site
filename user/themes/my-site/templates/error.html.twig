@@ -1,8 +1,20 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-    <div class="lead text-center">
-        <h1>Error!</h1>
-        {{ page.content }}
+    <div class="page-not-found">
+    	<div class="page-not-found__inner">
+    		<div class="stars"></div>
+    		<div class="clouds"></div>
+	    	<span class="fourofour">404</span>
+	        <h1>Page Not Found</h1>
+	        <p>Woops. Looks like this page doesn't exist.</p>
+	        <div class="button"><a href="/">Return to home</a></div>
+	    </div>
     </div>
+{% block stuff %}{% endblock %}
+    {% include 'partials/side-panels.html.twig' %}
+
 {% endblock %}
+
+{% do assets.addJs('theme://js/inner.js', {'priority':101,'group':'bottom'}) %}
+{% do assets.addJs('theme://js/error.js', {'priority':102,'group':'bottom'}) %}
