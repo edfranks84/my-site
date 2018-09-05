@@ -105,6 +105,8 @@
 }
 .stars{
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 75vh;
     overflow: hidden;
@@ -143,21 +145,21 @@
 }
 .clouds{
     position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    width:100%;
-    height:100%;
-    display:block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
     background:{
         color: transparent; 
         image: url("../images/clouds.png");
-        repeat: repeat; 
+        repeat: repeat-x; 
         position: top center;
     }
-    z-index:3;
-    animation:move-clouds 200s linear infinite;
+    z-index: 3;
+    animation: move-clouds 200s linear infinite;
 }
 .fourofour{
     position: absolute;
