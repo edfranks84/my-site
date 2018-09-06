@@ -98,5 +98,8 @@ $(document).ready(function() {
       return false;
     });
 
+    $(".project-item").each(function(i, el) {
+      $(el).css("animation-delay", i * 150 + 200 + "ms");
+    });
 
 });

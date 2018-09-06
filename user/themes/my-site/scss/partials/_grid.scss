@@ -41,7 +41,7 @@ $grid-width: $max-width;
 @include breakpoint-set('no query fallbacks', true);
 @include breakpoint-set('to ems', true);
 // set basics followed by customs
-$BREAKPOINTS: ( 0to480: (0px 480px), 0to819: (0px 819px), tiny: 320px, 420: 420px, 480: 480px, 540: 540px, 0to600: (0px 600px), 600: 600px, 620: 620px, 640: 640px, 700: 700px, 0to740: (0px 740px), 740: 740px, 768: 768px, 768to920: (768px 920px), 780: 780px, (0px 600px), 600: 600px, 820: 820px, 920: 920px, 960: 960px, responsive: 920px, 1030: 1030px, 1060: 1060px, 1160:1160px, 1200: 1200px, 1250: 1250px, 1260: 1260px, 1400: 1400px, 1600: 1600px);
+$BREAKPOINTS: ( 0to480: (0px 480px), 0to819: (0px 819px), tiny: 320px, 420: 420px, 480: 480px, 540: 540px, 0to600: (0px 600px), 600: 600px, 620: 620px, 640: 640px, 700: 700px, 0to740: (0px 740px), 740: 740px, 768: 768px, 768to920: (768px 920px), 780: 780px, (0px 600px), 600: 600px, 690: 690px,  820: 820px, 920: 920px, 960: 960px, responsive: 920px, 1030: 1030px, 1060: 1060px, 1160:1160px, 1200: 1200px, 1250: 1250px, 1260: 1260px, 1400: 1400px, 1600: 1600px);
 .contain {
     @include container;
     min-width: $max-width;

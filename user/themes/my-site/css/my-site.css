@@ -360,6 +360,22 @@ caption, th, td {
   100% {
     top: 0px; } }
 
+@keyframes fold-in {
+  0% {
+    opacity: 0;
+    transform: rotateY(20deg) scale(0.9); }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg) scale(1); } }
+
+@keyframes fold-down {
+  0% {
+    opacity: 0;
+    transform: rotateX(20deg) scale(0.9); }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg) scale(1); } }
+
 /* ---------------------------------------------- *
   Partial: base
 
@@ -2435,10 +2451,10 @@ em {
     bottom: 0%;
     right: 0%;
     width: 50vw;
-    max-height: 50%;
+    max-height: 14em;
     opacity: 0.15;
-    -ms-transform: translate(12%, 12%) rotate(-30deg);
-        transform: translate(12%, 12%) rotate(-30deg);
+    -ms-transform: translate(2%, 13%) rotate(-30deg);
+        transform: translate(2%, 13%) rotate(-30deg);
     background-image: url("../images/circle-logo.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -3807,7 +3823,7 @@ html.fp-enabled,
     display: block;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 101%;
     background-color: rgba(0, 0, 0, 0.2);
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
     transition: opacity 400ms ease-out;
@@ -4451,8 +4467,14 @@ button.swiper-pagination-bullet {
   bottom: 1px; }
 
 .projects-page .project-panels {
-  height: 100%;
-  height: 95%; }
+  height: 95%;
+  perspective: 800px;
+  perspective-origin: 50% 50%; }
+  @media (min-width: 43.125em) {
+    .projects-page .project-panels {
+      perspective-origin: -10% 50%; } }
+  .projects-page .project-panels .swiper-wrapper {
+    transform-style: preserve-3d; }
 
 .projects-page .project-item {
   position: relative;
@@ -4461,13 +4483,18 @@ button.swiper-pagination-bullet {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  cursor: pointer; }
+  cursor: pointer;
+  opacity: 0;
+  transform: rotateX(20deg) scale(0.9); }
   @media (min-width: 30em) {
     .projects-page .project-item {
       padding: 2em 0; } }
   @media (min-width: 38.75em) {
     .projects-page .project-item {
       box-shadow: 0 8px 12px -3px rgba(0, 0, 0, 0.5), 0 7px 30px rgba(0, 0, 0, 0.5); } }
+  @media (min-width: 43.125em) {
+    .projects-page .project-item {
+      transform: rotateY(20deg) scale(0.9); } }
   .projects-page .project-item:before {
     content: "";
     position: absolute;
@@ -4575,6 +4602,12 @@ button.swiper-pagination-bullet {
     @media (min-width: 30em) {
       .projects-page .project-item:hover .project-item__intro, .projects-page .project-item.active .project-item__intro {
         margin-bottom: 1.5em; } }
+
+.projects-page.page-loaded .project-item {
+  animation: fold-down 600ms ease-out forwards; }
+  @media (min-width: 43.125em) {
+    .projects-page.page-loaded .project-item {
+      animation: fold-in 600ms ease-out forwards; } }
 
 /* -----------------------------------------
 	13.0. Footer

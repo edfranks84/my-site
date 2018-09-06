@@ -1,185 +1,206 @@
-    .projects-page {
-        .page-wrapper {
-            height: 100%;
-            padding: 6em 0 0 13%;
-            @include respond-to(480) {
-                padding: 5.5em 0 0 6em
-            }
-            @include respond-to(640) {
-                padding: 6em 0 0 6em
-            }
-            @include respond-to(1400) {
-                padding: 7em 0 0 6em
-            }
+.projects-page {
+    .page-wrapper {
+        height: 100%;
+        padding: 6em 0 0 13%;
+        @include respond-to(480) {
+            padding: 5.5em 0 0 6em
         }
-        .swiper-pagination-progressbar {
+        @include respond-to(640) {
+            padding: 6em 0 0 6em
+        }
+        @include respond-to(1400) {
+            padding: 7em 0 0 6em
+        }
+    }
+    .swiper-pagination-progressbar {
+        width: 100%;
+        height: 3px;
+        bottom: 1px;
+    }
+    .project-panels {
+        // height: 100%;
+        height: 95%;
+        perspective: 800px;
+        perspective-origin: 50% 50%;
+        // transform-style: preserve-3d;
+        // perspective: 1600px;
+        // perspective-origin: center;
+        @include respond-to(690){
+            perspective-origin: -10% 50%;
+        }
+        .swiper-wrapper{
+            transform-style: preserve-3d;
+        }
+    }
+    .project-item {
+        position: relative;
+        height: 100%;
+        padding: 1em 0;
+        display: flex;
+        overflow: hidden;
+        cursor: pointer;
+        opacity: 0;
+        transform: rotateX(20deg) scale(0.9);
+        // transform: rotateY(0);
+        // transition: transform 400ms ease-out;
+        // box-shadow: 0 8px 12px -3px rgba(0, 0, 0, 0.25), 0 4px 20px rgba(0, 0, 0, 0.35);
+        @include respond-to(480){
+            padding: 2em 0;
+        }
+        @include respond-to(620) {
+            // padding: 5% 0;
+            box-shadow: 0 8px 12px -3px rgba(0, 0, 0, 0.5), 0 7px 30px rgba(0, 0, 0, 0.5);
+        }
+        @include respond-to(690){
+            transform: rotateY(20deg) scale(0.9);
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: 3px;
-            bottom: 1px;
-        }
-        .project-panels {
-            height: 100%;
-            height: 95%;
-            // transform-style: preserve-3d;
-            // perspective: 1600px;
-            // perspective-origin: center;
-        }
-        .project-item {
-            position: relative;
-            height: 100%;
-            padding: 1em 0;
-            display: flex;
-            overflow: hidden;
-            cursor: pointer;
-            // transform: rotateY(0);
-            // transition: transform 400ms ease-out;
-            // box-shadow: 0 8px 12px -3px rgba(0, 0, 0, 0.25), 0 4px 20px rgba(0, 0, 0, 0.35);
-            @include respond-to(480){
-                padding: 2em 0;
-            }
+            height: 101%;
+            display: block;
+            z-index: 2;
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
             @include respond-to(620) {
-                // padding: 5% 0;
-                box-shadow: 0 8px 12px -3px rgba(0, 0, 0, 0.5), 0 7px 30px rgba(0, 0, 0, 0.5);
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
             }
-            &:before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 101%;
-                display: block;
-                z-index: 2;
-                background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+        }
+        &__bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: {
+                size: cover;
+                repeat: no-repeat;
+                position: 50% 50%;
+            }
+            filter: grayscale(10%);
+            opacity: 0.8;
+            transition: filter 400ms ease-out,
+            opacity 400ms ease-out,
+            transform 600ms ease-out;
+            z-index: 1;
+        }
+        &__info {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+            &-inner {
+                transform: translateY(75px);
+                transform: translateY(3em);
+                transition: transform 500ms ease-out;
+                padding-left: 1.5em;
+                padding-right: 1em;
                 @include respond-to(620) {
-                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+                    padding-left: 2em;
+                    padding-right: 2em;
+                    transform: translateY(3.5em);
                 }
+                // left: -2em;
             }
-            &__bg {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: {
-                    size: cover;
-                    repeat: no-repeat;
-                    position: 50% 50%;
-                }
-                filter: grayscale(10%);
-                opacity: 0.8;
-                transition: filter 400ms ease-out,
-                opacity 400ms ease-out,
-                transform 600ms ease-out;
-                z-index: 1;
+        }
+        &__title {
+            font-size: 0.6875em;
+            @include respond-to(820) {
+                font-size: 0.875em;
             }
-            &__info {
-                position: relative;
-                z-index: 2;
-                display: flex;
-                align-items: flex-end;
-                overflow: hidden;
-                &-inner {
-                    transform: translateY(75px);
-                    transform: translateY(3em);
-                    transition: transform 500ms ease-out;
-                    padding-left: 1.5em;
-                    padding-right: 1em;
-                    @include respond-to(620) {
-                        padding-left: 2em;
-                        padding-right: 2em;
-                        transform: translateY(3.5em);
-                    }
-                    // left: -2em;
-                }
+            @include respond-to(920) {
+                font-size: 0.5625em;
             }
-            &__title {
+            @include respond-to(1200) {
                 font-size: 0.6875em;
-                @include respond-to(820) {
-                    font-size: 0.875em;
-                }
-                @include respond-to(920) {
-                    font-size: 0.5625em;
-                }
-                @include respond-to(1200) {
-                    font-size: 0.6875em;
-                }
-                @include respond-to(1600) {
-                    font-size: 0.875em;
-                }
-                h1 {
-                    line-height: 1.1;
-                    font-weight: 600;
-                    margin-bottom: 0.35em;
-                }
             }
-            &__intro {
+            @include respond-to(1600) {
+                font-size: 0.875em;
+            }
+            h1 {
+                line-height: 1.1;
+                font-weight: 600;
+                margin-bottom: 0.35em;
+            }
+        }
+        &__intro {
+            font-size: ms(0);
+            line-height: 1.2;
+            font-weight: 400;
+            // margin-bottom: 0.2em;
+            transition: margin 600ms ease-out;
+            display: none;
+            // @include respond-to(620) {
+            //     font-size: ms(0);
+            //     margin-bottom: 0.25em;
+            //     display: block;
+            // }
+            @media (min-width: 620px) and (orientation: landscape) and (min-height: 400px){
                 font-size: ms(0);
-                line-height: 1.2;
-                font-weight: 400;
-                // margin-bottom: 0.2em;
-                transition: margin 600ms ease-out;
-                display: none;
-                // @include respond-to(620) {
-                //     font-size: ms(0);
-                //     margin-bottom: 0.25em;
-                //     display: block;
-                // }
-                @media (min-width: 620px) and (orientation: landscape) and (min-height: 400px){
-                    font-size: ms(0);
-                    margin-bottom: 0.25em;
-                    display: block;
-                }
-                @include respond-to(1200) {
-                    // font-size: ms(1);
-                }
+                margin-bottom: 0.25em;
+                display: block;
             }
-            .button {
-                margin-top: 0.75em;
+            @include respond-to(1200) {
+                // font-size: ms(1);
+            }
+        }
+        .button {
+            margin-top: 0.75em;
+            a {
+                border-color: rgba($white, 0.9);
+                color: rgba($white, 0.9);
+            }
+            &:before{
+                background-image: linear-gradient(to right, rgba($white, 0.05), $white);
+            }
+            &:hover {
+                &:before {
+                    background-image: linear-gradient(to right, rgba($white, 0.25), $white);
+                }
                 a {
-                    border-color: rgba($white, 0.9);
-                    color: rgba($white, 0.9);
-                }
-                &:before{
-                    background-image: linear-gradient(to right, rgba($white, 0.05), $white);
-                }
-                &:hover {
-                    &:before {
-                        background-image: linear-gradient(to right, rgba($white, 0.25), $white);
-                    }
-                    a {
-                        border-color: $white;
-                        // color: $base;
-                        color: #131a2b;
-                        // text-shadow: 0 1px 1px rgba(0,0,0,0.1);
-                    }
-                }
-                
-                @include respond-to(0to600) {
-                    font-size: 12px;
-                    a{
-                        padding: 0.4em 2.5em;
-                    }
+                    border-color: $white;
+                    // color: $base;
+                    color: #131a2b;
+                    // text-shadow: 0 1px 1px rgba(0,0,0,0.1);
                 }
             }
-            &:hover,&.active{    
-                // transform: rotateY(-30deg);
-                .project-item__bg {
-                    filter: grayscale(0%);
-                    opacity: 0.95;
-                    transform: scale(1.15);
-                    // opacity: 0.75;
+            
+            @include respond-to(0to600) {
+                font-size: 12px;
+                a{
+                    padding: 0.4em 2.5em;
                 }
-                .project-item__info-inner {
-                    transform: translateY(0);
+            }
+        }
+        &:hover,&.active{    
+            // transform: rotateY(-30deg);
+            .project-item__bg {
+                filter: grayscale(0%);
+                opacity: 0.95;
+                transform: scale(1.15);
+                // opacity: 0.75;
+            }
+            .project-item__info-inner {
+                transform: translateY(0);
+            }
+            .project-item__intro {
+                margin-bottom: 0.5em;
+                @include respond-to(480) {
+                    margin-bottom: 1.5em;
                 }
-                .project-item__intro {
-                    margin-bottom: 0.5em;
-                    @include respond-to(480) {
-                        margin-bottom: 1.5em;
-                    }
 
-                }
             }
         }
     }
+    &.page-loaded{
+        .project-item{
+            animation: fold-down 600ms ease-out forwards;
+            @include respond-to(690){
+                animation: fold-in 600ms ease-out forwards;
+            }
+        }
+    }
+}

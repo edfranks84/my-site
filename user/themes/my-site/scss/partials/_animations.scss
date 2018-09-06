@@ -326,3 +326,23 @@
         top: 0px;
     }
 }
+@keyframes fold-in{
+    0%{
+        opacity: 0;
+        transform: rotateY(20deg) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg) scale(1);
+    }
+}
+@keyframes fold-down{
+    0%{
+        opacity: 0;
+        transform: rotateX(20deg) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateX(0deg) scale(1);
+    }
+}
