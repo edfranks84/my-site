@@ -3311,9 +3311,9 @@ html.fp-enabled,
     opacity: 1;
     letter-spacing: 3px; }
   .project-typography.inviewport .project-typography__body .eyebrow {
-    animation: fade-in-right 650ms ease-out 1700ms forwards; }
+    animation: fade-in-right 650ms ease-out 1000ms forwards; }
   .project-typography.inviewport .project-typography__body-title span {
-    animation: fade-in-up 600ms ease-out 2100ms forwards; }
+    animation: fade-in-up 600ms ease-out 1200ms forwards; }
   .project-typography.inviewport .project-typography__body-az span {
     opacity: 1;
     letter-spacing: 3px; }
@@ -3364,7 +3364,7 @@ html.fp-enabled,
     line-height: 1.8;
     opacity: 0;
     letter-spacing: 10px;
-    transition: all 600ms ease-out 1200ms; }
+    transition: all 600ms ease-out 700ms; }
     @media (min-width: 43.75em) {
       .project-typography__heading-az span {
         font-size: 1.44em; } }
@@ -3427,7 +3427,7 @@ html.fp-enabled,
     letter-spacing: 10px;
     opacity: 0;
     line-height: 1.8;
-    transition: letter-spacing 600ms ease-out 2400ms, opacity 600ms ease-out 2400ms; }
+    transition: letter-spacing 600ms ease-out 1600ms, opacity 600ms ease-out 1600ms; }
     @media (min-width: 43.75em) {
       .project-typography__body-az span {
         font-size: 1.2em; } }
