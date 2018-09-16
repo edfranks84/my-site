@@ -195,6 +195,10 @@ h6 a,
 .page-wrapper {
     position: relative;
     overflow: hidden;
+    &::before{
+        content: ' ';
+        position: fixed;
+    }
 }
 
 .container {

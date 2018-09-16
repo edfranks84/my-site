@@ -105,19 +105,19 @@
             {% endif %}
         </p> #}
         {# <p class="prev-next"> #}
-            <a class="project-link" href="/projects/tasty-media" style="background-image: url(../user/pages/04.projects/05.tasty-media/main.jpg);">
-                <span>Tasty Media</span>
+        {% if not page.isFirst %}
+            {% set link2Bg = 'background-image: url(' ~ page.nextSibling(page.path).media[page.nextSibling(page.path).header.main_img].url() ~ ');' %}
+            <a class="project-link" href="{{ page.nextSibling.url }}" style="{{ link2Bg }};">
+                <span>{{ page.nextSibling(page.path).header.title }}</span>
             </a>
-
-
-            {% if not page.isLast %}
-                {% set linkBg = 'background-image: url(' ~ page.prevSibling(page.path).media[page.prevSibling(page.path).header.main_img].url() ~ ');' %}
-                <a class="project-link" href="{{ page.prevSibling.url }}" style="{{ linkBg }};">
-                    {# {{ page.prevSibling(page.path).media[page.prevSibling(page.path).header.main_img] }} #}
-                    {# <a class="button" href="{{ page.prevSibling.url }}">{{ page.prevSibling(page.path).header.title }}</a> #}
-                    <span>{{ page.prevSibling(page.path).header.title }}</span>
-                </a>
-            {% endif %}
+        {% endif %}
+        {% if not page.isLast %}
+            {% set linkBg = 'background-image: url(' ~ page.prevSibling(page.path).media[page.prevSibling(page.path).header.main_img].url() ~ ');' %}
+            <a class="project-link" href="{{ page.prevSibling.url }}" style="{{ linkBg }};">
+                <span>{{ page.prevSibling(page.path).header.title }}</span>
+            </a>
+        {% endif %}
+            
 
             
             {# {% if not page.isFirst %} #}

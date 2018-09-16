@@ -4,11 +4,12 @@
 <head>
 {% block head %}
     <meta charset="utf-8" />
-    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+    {# <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title> #}
+    <title>{{ header.title|e('html') }}</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {# {% include 'partials/metadata.html.twig' %} #}
+    {% include 'partials/metadata.html.twig' %}
     <link rel="canonical" href="{{ page.url(true, true) }}" />
     <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,700|Poppins:500,600,700|Barlow+Condensed:400,600" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -31,7 +32,7 @@
     <meta name="msapplication-square150x150logo" content="../images/mstile-150x150.png" />
     <meta name="msapplication-wide310x150logo" content="../images/mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="../images/mstile-310x310.png" />
-
+    <meta name="theme-color" content="#222222" />
     {% block stylesheets %}
         {% do assets.addCss('theme://css/my-site.css', 98) %}
     {% endblock %}

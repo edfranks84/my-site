@@ -1,4 +1,7 @@
 ---
+metadata:
+    description: 'Web design case study by Ed Franks for Vaujany Ski Company. A company offering chalets and apartment in Vaujany in the french Alps'
+    keywords: 'Design, Graphics, Website, Case Study, Web design, Social Marketing, UI, UX, Case Study'
 body_classes: "project-page"
 template: vaujany
 title: Vaujany Ski Company

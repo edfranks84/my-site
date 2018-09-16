@@ -3923,10 +3923,10 @@ d=b[0],b=b[1];c.removeChild(a);if(d.length){if(a=e[d]=e[d]||new XMLHttpRequest,a
 $(document).ready(function() {
 
     $('#fullpage').fullpage({
-        anchors: ['welcome', 'vaujany', 'mcfeggan-brown', 'mark-todd', 'lifepoint', 'tasty-media', 'about', 'contact'],
+        anchors: ['welcome', 'interventus', 'vaujany', 'mcfeggan-brown', 'mark-todd', 'lifepoint', 'tasty-media', 'about', 'contact'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Welcome', 'Vaujany', 'Mcfeggan Brown', 'Mark Todd', 'Lifepoint', 'Tasty Media', 'About', 'Contact'],
+        navigationTooltips: ['Welcome', 'Interventus', 'Vaujany', 'Mcfeggan Brown', 'Mark Todd', 'Lifepoint', 'Tasty Media', 'About', 'Contact'],
         sectionSelector: '.home-section',
         showActiveTooltip: true,
         touchSensitivity: 10,

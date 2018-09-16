@@ -18,7 +18,7 @@
     <div class="project-typography__inner">
         <div class="typography-bgtext">Typography</div>
         <div class="typography-label eyebrow">Type</div>
-        <link href="https://fonts.googleapis.com/css?family=Poppins:600|Heebo" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Chivo:700|Open+Sans:400" rel="stylesheet">
         <div class="project-typography__heading">
             <div class="eyebrow">Heading</div>
             <div class="project-typography__heading-title">
@@ -52,7 +52,7 @@
             <div class="inner-label"><span>{{page.header.inner_label_1}}</span></div>
             {{ page.media['inner1.jpg'].html('inner page', 'inner page', 'inner1') }}         
         </div>    
-        <div class="project-inner__image rellax" data-rellax-speed="4" data-rellax-percentage="0.2">
+        <div class="project-inner__image rellax" data-rellax-speed="3" data-rellax-percentage="0.2">
             {# <div class="inner-bgtext">{{page.header.inner_bgtext_2}}</div> #}
             <div class="inner-label"><span>{{page.header.inner_label_2}}</span></div>
             {{ page.media['inner2.jpg'].html('inner page', 'inner page', 'inner2') }}     
@@ -69,7 +69,7 @@
                 {{ page.media['mobile-home.png'].html('', '', 'mobile home') }} 
             </div>
             <div class="responsive-tablet tablet rellax" data-rellax-speed="4" data-rellax-percentage="0.3">
-                {{ page.media['tablet.png'].html('Responsive Tablet', 'Responsive Tablet', 'table-img') }} 
+                {{ page.media['tablet.png'].html('Responsive Tablet', 'Responsive Tablet', 'tablet-img') }} 
             </div>  
         </div>
         <div class="responsive-bottom" data-scroll-activate="" data-scroll-activetolerance="200">
@@ -88,24 +88,19 @@
 
 <section class="project-links">
     <div class="project-links-wrap">
-        
-            {# {% if not page.isLast %}
+        <a class="project-link" href="../projects/tasty-media" style="background-image: url(../user/pages/04.projects/06.tasty-media/main.jpg);">
+                <span>Tasty Media</span>
+            </a>
+
+
+            {% if not page.isLast %}
                 {% set linkBg = 'background-image: url(' ~ page.prevSibling(page.path).media[page.prevSibling(page.path).header.main_img].url() ~ ');' %}
                 <a class="project-link" href="{{ page.prevSibling.url }}" style="{{ linkBg }};">
+                    {# {{ page.prevSibling(page.path).media[page.prevSibling(page.path).header.main_img] }} #}
+                    {# <a class="button" href="{{ page.prevSibling.url }}">{{ page.prevSibling(page.path).header.title }}</a> #}
                     <span>{{ page.prevSibling(page.path).header.title }}</span>
                 </a>
-            {% endif %} #}
-
-            {% if not page.isFirst %}
-                {% set link2Bg = 'background-image: url(' ~ page.nextSibling(page.path).media[page.nextSibling(page.path).header.main_img].url() ~ ');' %}
-                <a class="project-link" href="{{ page.nextSibling.url }}" style="{{ link2Bg }};">
-                    <span>{{ page.nextSibling(page.path).header.title }}</span>
-                </a>
             {% endif %}
-
-            <a class="project-link" href="../projects/interventus" style="background-image: url(../user/pages/04.projects/01.interventus/main.jpg);">
-                <span>Interventus</span>
-            </a>
 
     </div>
 </section>

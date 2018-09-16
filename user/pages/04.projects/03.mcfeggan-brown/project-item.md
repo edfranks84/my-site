@@ -1,4 +1,7 @@
 ---
+metadata:
+    description: 'Web design case study by Ed Franks for McFeggan Brown. A company specialising in office refurb designs and fit outs'
+    keywords: 'Design, Graphics, Website, Case Study, Web design, Social Marketing, UI, UX, Case Study'
 body_classes: "project-page"
 template: mcfeggan-brown
 title: McFeggan Brown

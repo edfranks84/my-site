@@ -654,7 +654,7 @@
             line-height: 1.8;
             opacity: 0;
             letter-spacing: 10px;
-            transition: all 600ms ease-out 700ms;
+            transition: all 700ms ease-out 700ms;
             @include respond-to(700) {
                 font-size: ms(2);
             }
@@ -757,7 +757,7 @@
             letter-spacing: 10px;
             opacity: 0;
             line-height: 1.8;
-            transition: letter-spacing 600ms ease-out 1600ms, opacity 600ms ease-out 1600ms;
+            transition: letter-spacing 700ms ease-out 1600ms, opacity 600ms ease-out 1600ms;
             @include respond-to(700) {
                 font-size: ms(1);
             }
