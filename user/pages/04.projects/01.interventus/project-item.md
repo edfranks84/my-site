@@ -16,7 +16,7 @@ background: bg-bw.jpg
 main_img: main.jpg
 laptop_img: laptop.png
 intro_title: Social Media Marketing
-intro_text: Interventus originally had a very simple template site that didn't look very interesting and didn't allow them to show their company in the right light to clients<br><br>So I designed them a site that was creative and interesting, so they could stand out rather just being anoter template site.
+intro_text: Interventus originally had a very simple template site that didn't look very interesting and didn't allow them to show their company in the right light to clients<br><br>So I designed them a site that was creative and individual, so they could stand out rather just being anoter template site.
 inner_bgtext_1: About
 inner_label_1: About
 inner_bgtext_2: Apartments
