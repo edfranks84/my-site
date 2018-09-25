@@ -447,14 +447,14 @@ blockquote {
 /* - 2.1. - BASE LINK STYLES
 	------------------------------------------ */
 a {
-  color: blue;
+  color: #0d84f2;
   cursor: pointer;
   text-decoration: none;
   /* Improve readability when focused and hovered in all browsers: h5bp.com/h */ }
   a:hover {
-    color: purple; }
+    color: #3d9df5; }
   a:focus {
-    color: green; }
+    color: #0d84f2; }
   a:focus, a:active {
     outline: none; }
 
@@ -472,7 +472,7 @@ h6 a,
 .h4 a,
 .h5 a,
 .h6 a {
-  color: blue; }
+  color: #0d84f2; }
 
 /*********************************************
 	- 3.0 -  Helpers
@@ -777,7 +777,7 @@ em {
           transform: rotate(0deg);
           transition: transform 300ms ease-out; }
         .mobile-nav .nav li.parent > a:hover:after {
-          color: lightsteelblue; }
+          color: #3d9df5; }
       .mobile-nav .nav li.parent.open > a:after {
         -ms-transform: rotate(225deg);
             transform: rotate(225deg); }
@@ -793,7 +793,7 @@ em {
           .mobile-nav .nav li a {
             line-height: 2.5; } }
         .mobile-nav .nav li a:hover {
-          color: lightsteelblue;
+          color: #3d9df5;
           text-decoration: none; }
       .mobile-nav .nav li.open > ul {
         display: block; }
@@ -1175,8 +1175,8 @@ em {
   z-index: 1;
   opacity: 0;
   transition: opacity 400ms ease-out;
-  background-color: lightsteelblue;
-  background-image: linear-gradient(to right, #0d84f2, lightsteelblue); }
+  background-color: #3d9df5;
+  background-image: linear-gradient(to right, #0d84f2, #3d9df5); }
 
 .solid-button.grad::after {
   content: "";
@@ -1190,7 +1190,7 @@ em {
   opacity: 1;
   transition: opacity 400ms ease-out;
   background-color: #0d84f2;
-  background-image: linear-gradient(to right, lightsteelblue, #0d84f2); }
+  background-image: linear-gradient(to right, #3d9df5, #0d84f2); }
 
 .solid-button.grad a {
   background-color: transparent;
@@ -1212,7 +1212,7 @@ em {
   background-image: linear-gradient(to right, #005865, #00808c); }
 
 .solid-button.grad.grad-dark::after {
-  background-color: navy;
+  background-color: #0a6ac2;
   background-image: linear-gradient(to right, #00808c, #005865); }
 
 .main-content {
@@ -2132,7 +2132,7 @@ em {
           .project-section__image-inner:before, .project-section__image-inner:after {
             left: -4.5em; } }
       .project-section__image-inner:after {
-        background-color: navy;
+        background-color: #0a6ac2;
         transition: width 500ms ease-out 550ms; }
     .project-section__image img {
       box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.3), 0 8px 40px 0 rgba(0, 0, 0, 0.5);
@@ -2931,7 +2931,7 @@ html.fp-enabled,
     box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.4);
     background-size: cover; }
     .project-top__image span {
-      background-color: navy;
+      background-color: #0a6ac2;
       position: absolute;
       top: 0;
       left: 0;

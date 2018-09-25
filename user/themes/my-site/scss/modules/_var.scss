@@ -84,15 +84,15 @@ sans-serif;
 $white: #FFFFFF;
 $black: #2f2f2f;
 $base: #0d84f2;
-$base-light: lightsteelblue;
-$base-dark: navy;
+$base-light: lighten(#0d84f2,10%);
+$base-dark: darken(#0d84f2,10%);
 $comp: red;
 $grey: #888888;
 $l-grey: #f5f5f5;
 //links
-$link: blue;
-$link-focus: green;
-$link-hover: purple;
+$link: $base;
+$link-focus: $base;
+$link-hover: $base-light;
 //paths
 $img-path: "../images";
 $svg-path: "../images/svg";
