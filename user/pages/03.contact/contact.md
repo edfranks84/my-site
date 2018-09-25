@@ -1,8 +1,8 @@
 ---
 title: Contact
 email:
-    link: hi@edfranksdesign.co.uk
-    text: hi@edfranksdesign.co.uk
+    link: hi@edfranks.design
+    text: hi@edfranks.design
 social:
     -
         link: #
