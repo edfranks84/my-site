@@ -3461,7 +3461,7 @@ html.fp-enabled,
       animation: fade-in-up 700ms ease-out 200ms forwards; } }
   @media (min-width: 51.25em) {
     .inner-pages.inviewport .project-inner__image:nth-child(2) {
-      animation: fade-in 700ms ease-out 200ms forwards; } }
+      animation: fade-in-up 700ms ease-out 200ms forwards; } }
   @media (min-width: 0em) and (max-width: 51.1875em) {
     .inner-pages.inviewport .project-inner__image:nth-child(3) {
       animation: fade-in-up 700ms ease-out 600ms forwards; } }

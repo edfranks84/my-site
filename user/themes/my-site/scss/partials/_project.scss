@@ -819,7 +819,7 @@
                     animation: fade-in-up 700ms ease-out 200ms forwards;
                 }
                 @include respond-to(820) {
-                    animation: fade-in 700ms ease-out 200ms forwards;
+                    animation: fade-in-up 700ms ease-out 200ms forwards;
                 }
             }
             &:nth-child(3) {
