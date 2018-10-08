@@ -1,6 +1,6 @@
 ---
 metadata:
-    description: Portfolio for Ed Franks, web/graphic designer and front end developer'
+    description: Portfolio for Ed Franks, web/graphic designer and front end developer
     keywords: 'Design, Graphics, Website, Portfolio, Web design, UI, UX'
 title: Portfolio of Ed Franks
 menu: Home
