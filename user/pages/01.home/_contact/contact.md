@@ -7,11 +7,11 @@ email:
         text: hi@edfranks.design
 social:
     -
-        link: dribbble
+        link: https://dribbble.com/edfranks84
         text: Dribbble
         color: ea4c89
     -
-        link: behance
+        link: https://www.behance.net/edfranks
         text: Behance
         color: 0b7dff
         
