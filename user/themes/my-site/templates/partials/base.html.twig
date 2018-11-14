@@ -34,6 +34,16 @@
     <meta name="msapplication-wide310x150logo" content="../images/mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="../images/mstile-310x310.png" />
     <meta name="theme-color" content="#222222" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129282680-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-129282680-1');
+    </script>
+
     {% block stylesheets %}
         {% do assets.addCss('theme://css/my-site.css', 98) %}
     {% endblock %}
